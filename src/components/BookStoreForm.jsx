@@ -64,6 +64,7 @@ const BookStoreForm = () => {
           <option value="Grade_9">Grade 9</option>
           <option value="Grade_10">Grade 10</option>
           <option value="Grade_11">Grade 11</option>
+          <option value="Grade_12">Grade 12</option>
         </select>
 
         <label htmlFor="subject" className="block mb-2 font-semibold">
@@ -83,7 +84,7 @@ const BookStoreForm = () => {
           <option value="Mathematics">Mathematics</option>
           <option value="Scrince">Scrince</option>
           <option value="Social_Studies">Social Studies</option>
-          <option value="Life_Skill">Life Skill</option>
+          <option value="Life_Skills">Life Skills</option>
           <option value="Physics">Physics</option>
           <option value="Economics">Economics</option>
           <option value="Biology">Biology</option>
