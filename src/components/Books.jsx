@@ -1,7 +1,7 @@
 
 
+
 const Books = ({booksData}) => {
-  console.log(booksData);
   return (
     <>
     <h1 className='text-lg font-semibold text-[#333] text-center mt-6 mb-2'>Download All PDF Books For Free</h1>
