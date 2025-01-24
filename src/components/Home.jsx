@@ -1,6 +1,7 @@
 import {useState, useEffect} from "react";
 import axios from "axios";
 import Books from "./Books";
+import About from "./About";
 
 const Home = () => {
   const api_url = import.meta.env.VITE_APP_API_URL;
@@ -20,6 +21,7 @@ const Home = () => {
   return (
     <>
     <Books booksData={booksData}/>
+    <About />
     </>
     )
 }

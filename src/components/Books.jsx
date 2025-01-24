@@ -5,7 +5,7 @@ const Books = ({booksData}) => {
   return (
     <>
     <h1 className='text-lg font-semibold text-[#333] text-center mt-6 mb-2'>Download All PDF Books For Free</h1>
-    <div className='p-6 w-full grid grid-cols-1 sm:grid-cols-2 gap-8'>
+    <div className='p-6 w-full grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8'>
     {
       booksData && (booksData.map((book, i) => (
       <div
@@ -14,7 +14,7 @@ const Books = ({booksData}) => {
   <img
     src={book.thumbnailUrl}
     alt="book's thumbnail"
-    className="rounded-md w-[90%] mx-auto h-[200px] m-4 object-cover"
+    className="rounded-md  mx-auto h-[200px] mt-2 object-cover"
   />
   <h3 className="text-lg font-semibold text-gray-700">{book.subject}</h3>
   <h2 className="text-base font-medium text-gray-800 px-2">{book.title.replace(/[_-]/g, " ").replace("Answers", "အဖြေစုံ")}</h2>
