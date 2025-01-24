@@ -20,7 +20,11 @@ const handleShare = () => {
 };
 
 return (
-  <div className="flex flex-row justify-center items-center gap-6 my-6 justify-center">
+  <>
+  <p className="text-gray-700 text-center my-4 ">
+  Help others discover free PDF books by sharing this site!
+</p>
+  <div className="flex flex-row justify-center items-center gap-6 my-4 justify-center">
     {/* Web Share / Copy Link */}
     <button
       onClick={handleShare}
@@ -41,6 +45,7 @@ return (
       </a>
     </div>
   </div>
+  </>
 );
 }
 
