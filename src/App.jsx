@@ -11,9 +11,9 @@ const App = () => {
     <>
     <BrowserRouter>
     <Navbar />
-    <BookStoreForm />
     <Routes>
     <Route path="/" element={<Home/>}/>
+    <Route path="/upload" element={<BookStoreForm />}/>
     </Routes>
     <Footer />
     </BrowserRouter>
