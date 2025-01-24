@@ -1,4 +1,4 @@
-
+import { FaShare, FaWhatsapp } from "react-icons/fa6";
 
 const Share = () => {
   
@@ -6,7 +6,7 @@ const handleShare = () => {
   if (navigator.share) {
     navigator.share({
       title: "Download Free PDF Books",
-      text: "Check out this awesome website for free PDF books!\n",
+      text: "Check out this awesome website for free PDF books!",
       url: window.location.href,
     })
       .then(() => console.log("Shared successfully!"))
@@ -24,8 +24,8 @@ return (
     {/* Web Share / Copy Link */}
     <button
       onClick={handleShare}
-      className="rounded-md bg-blue-500 text-white py-1 px-4 transition duration-300 hover:bg-blue-700">
-      Share this Website
+      className="rounded-md bg-green-500 text-white py-1 px-4 transition duration-300 hover:bg-green-700">
+      <FaShare size='20'/>
     </button>
 
     {/* Social Media Links */}
@@ -36,8 +36,8 @@ return (
         )}`}
         target="_blank"
         rel="noopener noreferrer"
-        className="rounded-md bg-green-500 text-white py-2 px-4 transition duration-300 hover:bg-green-700">
-        WhatsApp
+        className="flex flex-row items-center rounded-md bg-zinc-200 text-white py-1 px-4 transition duration-300 hover:bg-zinc-300">
+        <FaWhatsapp size='20' className='text-green-600'/>
       </a>
     </div>
   </div>
