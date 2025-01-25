@@ -1,4 +1,4 @@
-
+import {Link} from "react-router"
 
 
 const Books = ({filterData, isLoading}) => {
@@ -34,6 +34,7 @@ const Books = ({filterData, isLoading}) => {
       ))
       ))
     }
+    <Link to='/contact' className='bg-blue-500 text-white underline cursor-pointer hover:bg-blue-700 active:bg-violet-700 rounded-md w-fit py-1 px-2'>Contact Us</Link>
     </div>
     </>
     )
