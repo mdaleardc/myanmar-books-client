@@ -1,10 +1,11 @@
 import React from 'react';
 import { FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
+import Contact from "./Contact";
 
 const About = () => {
   return (
-    <section className="bg-gray-50 mx-auto rounded py-10 w-11/12 px-4 sm:px-6 lg:px-8">
+    <section className="bg-gray-50 mx-auto rounded py-10 w-full px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto text-center">
         {/* Introduction */}
         <h2 className="text-3xl font-bold text-gray-800 mb-4">About Our Platform</h2>
@@ -55,23 +56,7 @@ const About = () => {
       </div>
       </div>
 
-      {/* Support/Collaborate Section */}
-      <div className="mt-12 max-w-4xl mx-auto text-center">
-        <h3 className="text-2xl font-bold text-gray-800 mb-4">Support or Collaborate</h3>
-        <p className="text-gray-600 text-lg leading-relaxed text-justify">This platform is a result of hard work and dedication to making education accessible. If you find this platform helpful, you can support my journey by sharing it with others, providing feedback, or collaborating with me on future projects.
-        </p>
-        <p className="text-gray-600 text-lg mt-4">
-          Reach out to me for collaboration or support via email: 
-          <a
-            href="mailto:dismailait@gmail.com"
-            className="text-blue-500 underline ml-1">
-            ismail@dev.com
-          </a>
-        </p>
-        <p className="text-gray-600 text-lg mt-4">
-          Let’s make education accessible to everyone, together!
-        </p>
-      </div>
+      <Contact />
     </section>
   );
 };
