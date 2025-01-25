@@ -125,8 +125,7 @@ const Contact = () => {
           <input
             type="submit"
             value="Send"
-            className="w-full rounded-md uppercase text-white border-2 border-zinc-400 p-2 py-1 tracking-wider cursor-pointer bg-[#0090FF] hover:bg-[#0ef] hover:text-black"
-          />
+            className="w-full rounded-md uppercase text-white border-2 border-zinc-400 p-2 py-1 tracking-wider cursor-pointer bg-[#0090FF] hover:bg-[#0ef] hover:text-black"/>
           </div>
         </form>
       </div>
