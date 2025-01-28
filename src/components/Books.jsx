@@ -25,7 +25,7 @@ const Books = ({filterData, isLoading}) => {
   />) : (
   <div className='h-[200px] bg-zinc-300 m-3 rounded-md flex flex-col items-center justify-center'>
     <p className='font-semibold'>{book.grade.replace('_', " ")}</p>
-    <p>{book.subject} {book.pdfType}</p>
+    <p>{book.subject.replace('_', " ")} {book.pdfType}</p>
     <p>{book.curriculum}</p>
   </div>
   )
