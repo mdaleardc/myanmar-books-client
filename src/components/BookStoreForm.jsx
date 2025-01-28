@@ -8,6 +8,7 @@ const BookStoreForm = () => {
     grade: "",
     subject: "",
     pdfType: "",
+    pdfUrl: "",
   });
 
   const handleChange = (e) => {
@@ -22,10 +23,11 @@ const BookStoreForm = () => {
     e.preventDefault();
 
     await axios
+      //.post(import.meta.env.VITE_APP_LOCAL_HOST_URL, formData)
       .post(`${api_url}/upload`, formData)
       .then((response) => {
         toast.success(response.data);
-        // Handle success (e.g., show a success message)
+      // Handle success (e.g., show a success message)
       })
       .catch((error) => {
         toast.error(error.message);
@@ -115,7 +117,15 @@ const BookStoreForm = () => {
         <label htmlFor="pdfUrl" className="block mb-2 font-semibold">
           PDF URL
         </label>
-        <input type="text" name='pdfUrl' id='pdfUrl' className="w-full p-2 mb-4 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-green-300" placeholder='PDF URL (if has)'/>
+        <input
+        type="text"
+        name='pdfUrl'
+        id='pdfUrl'
+        className="w-full p-2 mb-4 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-green-300"
+        placeholder='PDF URL (if has)'
+        value={formData.pdfUrl}
+        onChange={handleChange}/>
+
         <input
           type="submit"
           value="Submit"
