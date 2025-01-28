@@ -24,9 +24,9 @@ const Books = ({filterData, isLoading}) => {
     className="rounded-md  mx-auto h-[200px] mt-1 object-cover"
   />) : (
   <div className='h-[200px] bg-zinc-300 m-3 rounded-md flex flex-col items-center justify-center'>
-  <p className='font-semibold'>{book.grade.replace('_', " ")}</p>
-  <p>{book.subject} {book.pdfType}</p>
-  <p>{book.curriculum}</p>
+    <p className='font-semibold'>{book.grade.replace('_', " ")}</p>
+    <p>{book.subject} {book.pdfType}</p>
+    <p>{book.curriculum}</p>
   </div>
   )
   }

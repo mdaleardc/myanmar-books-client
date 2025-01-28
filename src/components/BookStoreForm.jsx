@@ -8,7 +8,7 @@ const BookStoreForm = () => {
     grade: "",
     subject: "",
     pdfType: "",
-    pdfUrl: "",
+    pdfUrl: ""
   });
 
   const handleChange = (e) => {
@@ -28,6 +28,12 @@ const BookStoreForm = () => {
       .then((response) => {
         toast.success(response.data);
       // Handle success (e.g., show a success message)
+      setFormData({
+        grade: "",
+        subject: "",
+        pdfType: "",
+        pdfUrl: ""
+      })
       })
       .catch((error) => {
         toast.error(error.message);
