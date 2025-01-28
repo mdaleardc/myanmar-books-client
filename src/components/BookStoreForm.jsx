@@ -90,7 +90,7 @@ const BookStoreForm = () => {
           <option value="Myanmar">Myanmar</option>
           <option value="English">English</option>
           <option value="Mathematics">Mathematics</option>
-          <option value="Scrince">Scrince</option>
+          <option value="Science">Science</option>
           <option value="Social_Studies">Social Studies</option>
           <option value="Life_Skills">Life Skills</option>
           <option value="Physics">Physics</option>
