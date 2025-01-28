@@ -112,6 +112,10 @@ const BookStoreForm = () => {
           <option value="Answers">Answers</option>
         </select>
 
+        <label htmlFor="pdfUrl" className="block mb-2 font-semibold">
+          PDF URL
+        </label>
+        <input type="text" name='pdfUrl' id='pdfUrl' className="w-full p-2 mb-4 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-green-300" placeholder='PDF URL (if has)'/>
         <input
           type="submit"
           value="Submit"
