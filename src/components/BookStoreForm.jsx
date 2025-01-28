@@ -130,7 +130,8 @@ const BookStoreForm = () => {
         className="w-full p-2 mb-4 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-green-300"
         placeholder='PDF URL (if has)'
         value={formData.pdfUrl}
-        onChange={handleChange}/>
+        onChange={handleChange}
+        autoComplete='off'/>
 
         <input
           type="submit"
