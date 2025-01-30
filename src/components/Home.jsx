@@ -47,7 +47,7 @@ const Home = () => {
   
   return (
     <>
-    <div className='fixed top-0 left-0 z-50 w-full bg-zinc-800 pb-3'>
+    <div className='fixed top-0 left-0 z-50 w-full bg-gradient-to-tr  from-zinc-800 to-[#FF005C] pb-3'>
     <h1 className='text-lg font-semibold text-[#fff] text-center mt-3 mb-2'>Download All PDF Books For Free</h1>
     <form className='max-auto text-center flex flex-row items-center justify-center gap-4' onSubmit={handleSearch}>
     <input type="text" placeholder="Search books" className="rounded-md w-2/5 sm:w-1/5 outline-none border focus:ring-[0.05rem] ring-[#02ff02]  py-1 px-2 text-1xl" value={searchQuery} onChange={(e)=> setSearchQuery(e.target.value)}/>
