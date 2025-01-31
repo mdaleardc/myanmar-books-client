@@ -32,6 +32,7 @@ const Books = ({filterData, isLoading}) => {
   }
   <h3 className="text-lg font-semibold text-gray-700">{book.subject.replace(/[_-]/g, " ")}</h3>
   <h2 className="text-base font-medium text-gray-800 px-2">{book.title.replace(/[_-]/g, " ").replace("Answers", "အဖြေစုံ")}</h2>
+  {/*<p>Downloaded: {book.clicks}</p>*/}
   <a
     href={`${import.meta.env.VITE_APP_API_URL}/download/${book._id}`}
     target="_blank"
