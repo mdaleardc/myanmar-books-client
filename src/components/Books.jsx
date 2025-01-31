@@ -33,7 +33,7 @@ const Books = ({filterData, isLoading}) => {
   <h3 className="text-lg font-semibold text-gray-700">{book.subject.replace(/[_-]/g, " ")}</h3>
   <h2 className="text-base font-medium text-gray-800 px-2">{book.title.replace(/[_-]/g, " ").replace("Answers", "အဖြေစုံ")}</h2>
   <a
-    href={book.pdfUrl}
+    href={`${import.meta.env.VITE_APP_API_URL}/download/${book._id}`}
     target="_blank"
     rel="noopener noreferrer"
     className={clsx(`inline-block mt-3 rounded-md text-white py-1 px-4 transition-colors duration-300`,
