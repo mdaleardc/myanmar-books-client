@@ -3,6 +3,7 @@ import axios from "axios";
 import Books from "./Books";
 import About from "./About";
 import Share from "./Share";
+import Supporters from "./Supporters";
 
 const Home = () => {
   const api_url = import.meta.env.VITE_APP_API_URL;
