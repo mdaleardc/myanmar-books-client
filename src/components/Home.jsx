@@ -4,7 +4,7 @@ import Books from "./Books";
 import About from "./About";
 import Share from "./Share";
 import Supporters from "./Supporters";
-import developerImage from "../../public/developer.png"
+import developerImage from "../assets/developer.png"
 
 const Home = () => {
   const api_url = import.meta.env.VITE_APP_API_URL;
@@ -49,7 +49,7 @@ const Home = () => {
   
   return (
     <>
-    <div className='flex flex-row justify-between items-center fixed top-0 left-0 z-50 w-full bg-gradient-to-tr  from-zinc-800 to-[#FF005C] pb-3 mx-auto'>
+    <div className='flex flex-row justify-between items-center fixed top-0 left-0 z-50 w-full bg-gradient-to-tr  from-green-800 to-[#FF005C] pb-3 mx-auto'>
     <a
       href="https://ismaildevcode.netlify.app/"
       target="_blank"
@@ -57,7 +57,7 @@ const Home = () => {
       className='ml-2 inline-block w-[50px] h-[50px] rounded-full border border-zinc-300 flex flex-row items-center'><img
       src={developerImage}
       loading='lazy'
-      alt='Developer image' className='w-full h-full rounded-full'/></a>
+      alt='Developer image' className='w-full h-full rounded-full object-cover'/></a>
   <div className='flex flex-col'>
     <h1 className='text-md font-semibold text-[#fff] text-center mt-3 mb-2'>Download All PDF Books For Free</h1>
     <form className='mx-auto text-center flex flex-row items-center justify-center gap-4' onSubmit={handleSearch}>
