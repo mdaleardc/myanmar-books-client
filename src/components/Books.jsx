@@ -1,5 +1,6 @@
 import {Link} from "react-router"
 import clsx from "clsx";
+import { MdDownloadForOffline } from "react-icons/md";
 
 
 const Books = ({filterData, isLoading}) => {
@@ -32,7 +33,9 @@ const Books = ({filterData, isLoading}) => {
   }
   <h3 className="text-lg font-semibold text-gray-700">{book.subject.replace(/[_-]/g, " ")}</h3>
   <h2 className="text-base font-medium text-gray-800 px-2">{book.title.replace(/[_-]/g, " ").replace("Answers", "အဖြေစုံ")}</h2>
-  {/*<p>Downloaded: {book.clicks}</p>*/}
+  {
+  book.clicks > 0 && (<p className='flex flex-row items-center justify-center text-gray-700'><MdDownloadForOffline size='25'/> {book.clicks}</p>)
+  }
   <a
     href={`${import.meta.env.VITE_APP_API_URL}/download/${book._id}`}
     target="_blank"
