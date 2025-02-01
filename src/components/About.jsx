@@ -47,7 +47,7 @@ const About = () => {
       </div>
 
       <div className="mt-12 max-w-4xl mx-auto text-center">
-      <h4 className="text-xl font-bold text-center text-[#ff00cc]">Follow on Social Medias</h4>
+      <h4 className="text-xl font-bold text-center text-[#ff00cc]">Follow on</h4>
       <div className='mx-auto text-center flex flex-row items-center justify-center gap-5 mt-4'>
       <a href='https://github.com/mdaleardc' target='_blank'><FaGithub size='25' className='text-[#181717]'/></a>
       <a href='https://www.facebook.com/mdaismail.it' target='_blank'><FaFacebook size='25' className='text-[#1877F2]'/></a>
