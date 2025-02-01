@@ -54,7 +54,10 @@ const Home = () => {
       href="https://ismaildevcode.netlify.app/"
       target="_blank"
       rel="noopener noreferrer"
-      className='ml-2 inline-block w-[50px] h-[50px] rounded-full border border-zinc-300 flex flex-row items-center'><img src={developerImage} alt='Developer image' className='w-full h-full rounded-full'/></a>
+      className='ml-2 inline-block w-[50px] h-[50px] rounded-full border border-zinc-300 flex flex-row items-center'><img
+      src={developerImage}
+      loading='lazy'
+      alt='Developer image' className='w-full h-full rounded-full'/></a>
   <div className='flex flex-col'>
     <h1 className='text-md font-semibold text-[#fff] text-center mt-3 mb-2'>Download All PDF Books For Free</h1>
     <form className='mx-auto text-center flex flex-row items-center justify-center gap-4' onSubmit={handleSearch}>
