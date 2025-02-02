@@ -5,7 +5,7 @@ import { MdDownloadForOffline } from "react-icons/md";
 
 const Books = ({filterData, isLoading}) => {
   const shuffledData = filterData && [...filterData].sort(()=>Math.random() - 0.5);
-  
+  console.log(shuffledData);
   return (
     <>
     <div className='p-6 w-full grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8'>
