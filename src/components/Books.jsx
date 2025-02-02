@@ -4,6 +4,8 @@ import { MdDownloadForOffline } from "react-icons/md";
 
 
 const Books = ({filterData, isLoading}) => {
+  const shuffledData = filterData && [...filterData].sort(()=>Math.random() - 0.5);
+  
   return (
     <>
     <div className='p-6 w-full grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8'>
@@ -14,7 +16,7 @@ const Books = ({filterData, isLoading}) => {
                 <p className="h-4 bg-gray-400 rounded w-3/4 mt-2"></p>
                 <p className="h-4 bg-gray-400 rounded w-1/2 mt-1"></p>
       </div>
-      ))) : (filterData && (filterData.filter(item=> item.pdfUrl).map((book, i) => (
+      ))) : (filterData && (shuffledData.map((book, i) => (
       <div
   className="rounded-xl shadow-md text-center pb-2 bg-zinc-100 transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
   key={i}>

@@ -23,8 +23,8 @@ const BookStoreForm = () => {
     e.preventDefault();
 
     await axios
-      //.post(`${import.meta.env.VITE_APP_LOCAL_HOST_URL}/upload`, formData) // for development
-      .post(`${api_url}/upload`, formData) //for deployment
+      .post(`${import.meta.env.VITE_APP_LOCAL_HOST_URL}/upload`, formData) // for development
+      //.post(`${api_url}/upload`, formData) //for deployment
       .then((response) => {
         toast.success(response.data);
       // Handle success (e.g., show a success message)
