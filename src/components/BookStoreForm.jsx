@@ -8,6 +8,8 @@ const BookStoreForm = () => {
     grade: "",
     subject: "",
     pdfType: "",
+    categories: "",
+    specificBookName: "",
     pdfUrl: ""
   });
 
@@ -23,8 +25,8 @@ const BookStoreForm = () => {
     e.preventDefault();
 
     await axios
-      .post(`${import.meta.env.VITE_APP_LOCAL_HOST_URL}/upload`, formData) // for development
-      //.post(`${api_url}/upload`, formData) //for deployment
+      //.post(`${import.meta.env.VITE_APP_LOCAL_HOST_URL}/upload`, formData) // for development
+      .post(`${api_url}/upload`, formData) //for deployment
       .then((response) => {
         toast.success(response.data);
       // Handle success (e.g., show a success message)
@@ -32,6 +34,8 @@ const BookStoreForm = () => {
         grade: "",
         subject: "",
         pdfType: "",
+        categories: "",
+        specificBookName: "",
         pdfUrl: ""
       })
       })
@@ -57,6 +61,7 @@ const BookStoreForm = () => {
           id="grade"
           value={formData.grade}
           onChange={handleChange}
+          required
           className="w-full p-2 mb-4 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-green-300">
           <option value="">Select Grade</option>
           <option value="Grade_1">Grade 1</option>
@@ -71,6 +76,7 @@ const BookStoreForm = () => {
           <option value="Grade_10">Grade 10</option>
           <option value="Grade_11">Grade 11</option>
           <option value="Grade_12">Grade 12</option>
+          <option value="General">General</option>
         </select>
 
         <label htmlFor="subject" className="block mb-2 font-semibold">
@@ -82,25 +88,44 @@ const BookStoreForm = () => {
           value={formData.subject}
           onChange={handleChange}
           required
-          className="w-full p-2 mb-4 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-green-300"
-        >
-          <option value="">Select Subject</option>
-          <option value="Myanmar">Myanmar</option>
-          <option value="English">English</option>
-          <option value="Mathematics">Mathematics</option>
-          <option value="Science">Science</option>
-          <option value="Social_Studies">Social Studies</option>
-          <option value="Life_Skills">Life Skills</option>
-          <option value="Physics">Physics</option>
-          <option value="Economics">Economics</option>
-          <option value="Biology">Biology</option>
-          <option value="Geometry">Geometry</option>
-          <option value="Art">Art</option>
-          <option value="Chemistry">Chemistry</option>
-          <option value="Grammar">Grammar</option>
-          <option value="History">History</option>
-          <option value="Geography">Geography</option>
-        </select>
+          className="w-full p-2 mb-4 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-green-300">
+  <option value="">Select Subject</option>
+    <option value="Myanmar">Myanmar</option>
+    <option value="English">English</option>
+    <option value="Mathematics">Mathematics</option>
+    <option value="Science">Science</option>
+    <option value="Social_Studies">Social Studies</option>
+    <option value="Life_Skills">Life Skills</option>
+    <option value="Physics">Physics</option>
+    <option value="Economics">Economics</option>
+    <option value="Biology">Biology</option>
+    <option value="Geometry">Geometry</option>
+    <option value="Art">Art</option>
+    <option value="Chemistry">Chemistry</option>
+    <option value="Grammar">Grammar</option>
+    <option value="History">History</option>
+    <option value="Geography">Geography</option>
+    <option value="Moral">Moral</option>
+    <option value="Islamic">Islamic</option>
+    <option value="Religious_Studies">Religious Studies</option>
+    <option value="Computer_Science">Computer Science</option>
+    <option value="Health_Education">Health Education</option>
+    <option value="Environmental_Studies">Environmental Studies</option>
+    <option value="Philosophy">Philosophy</option>
+    <option value="Psychology">Psychology</option>
+    <option value="Political_Science">Political Science</option>
+    <option value="Business_Studies">Business Studies</option>
+    <option value="Accounting">Accounting</option>
+    <option value="Physical_Education">Physical Education</option>
+    <option value="Technology">Technology</option>
+    <option value="Civics">Civics</option>
+    <option value="Home_Science">Home Science</option>
+    <option value="Agriculture">Agriculture</option>
+    <option value="Astronomy">Astronomy</option>
+    <option value="Literature">Literature</option>
+    <option value="Drama">Drama</option>
+    <option value="Ethics">Ethics</option>
+  </select>
 
         <label htmlFor="pdfType" className="block mb-2 font-semibold">
           PDF Type:
@@ -111,12 +136,48 @@ const BookStoreForm = () => {
           value={formData.pdfType}
           onChange={handleChange}
           required
-          className="w-full p-2 mb-4 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-green-300"
-        >
-          <option value="">Select PDF Type</option>
-          <option value="Textbook">Textbook</option>
-          <option value="Answers">Answers</option>
-        </select>
+          className="w-full p-2 mb-4 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-green-300">
+  <option value="">Select PDF Category</option>
+    <option value="Textbook">Textbook</option>
+    <option value="Answers">Answers</option>
+    <option value="Guide">Guide</option>
+    <option value="Notes">Notes</option>
+    <option value="Worksheet">Worksheet</option>
+    <option value="Exam_Paper">Exam Paper</option>
+    <option value="Reference">Reference</option>
+    <option value="Presentation">Presentation</option>
+    <option value="E-Book">E-Book</option>
+    <option value="Research_Paper">Research Paper</option>
+    <option value="Tutorial">Tutorial</option>
+  </select>
+  
+  <label htmlFor="categories" className="block mb-2 font-semibold">
+          Category
+  </label>
+  <select
+          name="categories"
+          id="categories"
+          value={formData.categories}
+          onChange={handleChange}
+          required
+          className="w-full p-2 mb-4 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-green-300">
+          <option value="">Select Category</option>
+<option value="Formal_Education">Formal Education</option>
+<option value="Non_Formal_Education">Non-Formal Education</option>
+   </select>
+  
+  <label htmlFor="specificBookName" className="block mb-2 font-semibold">
+  Specific Book Name (if any):
+</label>
+<input
+  type="text"
+  name="specificBookName"
+  id="specificBookName"
+  className="w-full p-2 mb-4 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-green-300"
+  placeholder="Enter the name of the specific book (if any)"
+  value={formData.specificBookName}
+  onChange={handleChange}
+/>
 
         <label htmlFor="pdfUrl" className="block mb-2 font-semibold">
           PDF URL
@@ -125,8 +186,9 @@ const BookStoreForm = () => {
         type="text"
         name='pdfUrl'
         id='pdfUrl'
+        required
         className="w-full p-2 mb-4 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-green-300"
-        placeholder='PDF URL (if has)'
+        placeholder='PDF URL'
         value={formData.pdfUrl}
         onChange={handleChange}
         autoComplete='off'/>

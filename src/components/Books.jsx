@@ -29,8 +29,7 @@ const Books = ({filterData, isLoading}) => {
   <div className='h-[200px] bg-zinc-300 m-3 rounded-md flex flex-col items-center justify-center'>
     <p className='font-semibold'>{book.grade.replace('_', " ")}</p>
     <p className='font-bold text-red-500'>Please Don't Click on this File! It is under development</p>
-    <p>{book.subject.replace('_', " ")} {book.pdfType}</p>
-    <p>{book.curriculum}</p>
+    <p>{book.subject.replace('_', " ")} {book.specificBookName}</p>
   </div>
   )
   }
