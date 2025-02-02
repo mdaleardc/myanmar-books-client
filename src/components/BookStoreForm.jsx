@@ -23,8 +23,8 @@ const BookStoreForm = () => {
     e.preventDefault();
 
     await axios
-      //.post(import.meta.env.VITE_APP_LOCAL_HOST_URL, formData)
-      .post(`${api_url}/upload`, formData)
+      //.post(`${import.meta.env.VITE_APP_LOCAL_HOST_URL}/upload`, formData) // for development
+      .post(`${api_url}/upload`, formData) //for deployment
       .then((response) => {
         toast.success(response.data);
       // Handle success (e.g., show a success message)
@@ -57,9 +57,7 @@ const BookStoreForm = () => {
           id="grade"
           value={formData.grade}
           onChange={handleChange}
-          required
-          className="w-full p-2 mb-4 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-green-300"
-        >
+          className="w-full p-2 mb-4 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-green-300">
           <option value="">Select Grade</option>
           <option value="Grade_1">Grade 1</option>
           <option value="Grade_2">Grade 2</option>
