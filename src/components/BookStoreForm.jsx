@@ -146,9 +146,17 @@ const BookStoreForm = () => {
     <option value="Exam_Paper">Exam Paper</option>
     <option value="Reference">Reference</option>
     <option value="Presentation">Presentation</option>
-    <option value="E-Book">E-Book</option>
     <option value="Research_Paper">Research Paper</option>
     <option value="Tutorial">Tutorial</option>
+    <option value="Self_Study">Self Study</option>
+    <option value="Vocational_Training">Vocational Training</option>
+    <option value="Skill_Development">Skill Development</option>
+    <option value="Adult_Education">Adult Education</option>
+    <option value="Short_Course">Short Course</option>
+    <option value="Workshop_Material">Workshop Material</option>
+    <option value="Community_Learning">Community Learning</option>
+    <option value="Extracurricular">Extracurricular</option>
+    <option value="Lifelong_Learning">Lifelong Learning</option>
   </select>
   
   <label htmlFor="categories" className="block mb-2 font-semibold">

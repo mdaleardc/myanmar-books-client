@@ -1,10 +1,11 @@
 import {Link} from "react-router"
 import clsx from "clsx";
 import { MdDownloadForOffline } from "react-icons/md";
+import underDeve from "../assets/file-Mi8QSP7upB7QbQ5MFo4jzi.webp"
 
 
 const Books = ({filterData, isLoading}) => {
-  const shuffledData = filterData && [...filterData].sort(()=>Math.random() - 0.5);
+      //const shuffledData = filterData && [...filterData].sort(()=>Math.random() - 0.5);
   return (
     <>
     <div className='p-2 w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
@@ -15,7 +16,7 @@ const Books = ({filterData, isLoading}) => {
                 <p className="h-4 bg-gray-400 rounded w-3/4 mt-2"></p>
                 <p className="h-4 bg-gray-400 rounded w-1/2 mt-1"></p>
       </div>
-      ))) : (filterData && (shuffledData.map((book, i) => (
+      ))) : (filterData && (filterData.map((book, i) => (
       <div
   className="rounded-md shadow-md text-center pb-2 bg-zinc-200 transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
   key={i}>
@@ -25,13 +26,15 @@ const Books = ({filterData, isLoading}) => {
     alt="book's thumbnail"
     className="rounded-lg  mx-auto w-11/12 h-[200px] mt-1 object-cover"
     loading="lazy"
-  />) : (
-  <div className='h-[200px] bg-zinc-300 m-3 rounded-md flex flex-col items-center justify-center'>
-    <p className='font-semibold'>{book.grade.replace('_', " ")}</p>
-    <p className='font-bold text-red-500'>Please Don't Click on this File! It is under development</p>
-    <p>{book.subject.replace('_', " ")} {book.specificBookName}</p>
-  </div>
-  )
+  />) : ( <div>
+  <img
+    src={underDeve}
+    alt="book's thumbnail"
+    className="rounded-lg  mx-auto w-11/12 h-[200px] mt-1 object-cover"
+    loading="lazy"
+  />
+  <p className='text-[red] font-semibold'>Under Development!</p>
+  </div>)
   }
   <h3 className="text-md font-semibold text-gray-700">{book.subject.replace(/[_-]/g, " ")}</h3>
   <h2 className="text-base font-medium text-gray-800 px-2">{book.title.replace(/[_-]/g, " ").replace("Answers", "အဖြေစုံ")}</h2>
@@ -44,8 +47,8 @@ const Books = ({filterData, isLoading}) => {
     rel="noopener noreferrer"
     className={clsx(`inline-block mt-3 rounded-md text-white py-1 px-4 transition-colors duration-300`,
     {
-      "bg-[#007bff] hover:bg-[#0056b3]" : book.pdfUrl.trim(),
-      "bg-zinc-500 pointer-events-none" : !book.pdfUrl.trim()
+      "bg-[#007bff] hover:bg-[#0056b3]" : book.thumbnailUrl.trim(),
+      "bg-zinc-500 pointer-events-none" : !book.thumbnailUrl.trim()
     }
     )}>
     Download PDF
