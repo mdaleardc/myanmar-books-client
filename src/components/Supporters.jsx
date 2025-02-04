@@ -42,7 +42,7 @@ Special thanks to those who contributed to making this project possible!
     <p className="text-gray-600 font-semibold mt-2 text-sm">
       {supporter.contribution}
     </p>
-        <p className="indent-6 text-gray-600 mt-2 text-sm leading-relaxed text-justify">
+        <p className="indent-6 text-gray-500 mt-2 text-sm leading-relaxed text-justify">
       {supporter.about}
     </p>
     <div className="mt-4 flex space-x-6">
