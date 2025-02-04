@@ -5,7 +5,7 @@ const supporters = [
   {
     name: "Mr. Nurul Hakim",
     contribution: "Supports providing and curating PDF file resources for our community",
-    about: "",
+    about: "Nurul Hakim, an educator, co-developed a Google-based PDF bookstore to make quality educational resources accessible. By sharing his own books, he promotes knowledge-sharing and limitless learning.",
     //image: "https://res.cloudinary.com/dubmzlovd/image/upload/v1738652247/414676626_695336989392924_2616853107996399_n_mvmfdo.jpg",
     image: "https://res.cloudinary.com/dubmzlovd/image/upload/v1738653886/IMG_20250204_132416_q7wxtb.jpg",
     social: {
@@ -39,8 +39,11 @@ Special thanks to those who contributed to making this project possible!
     <h3 className="text-xl font-semibold text-gray-700">
       {supporter.name}
     </h3>
-    <p className="text-gray-600 mt-2 text-sm">
+    <p className="text-gray-600 font-semibold mt-2 text-sm">
       {supporter.contribution}
+    </p>
+        <p className="indent-6 text-gray-600 mt-2 text-sm leading-relaxed text-justify">
+      {supporter.about}
     </p>
     <div className="mt-4 flex space-x-6">
       {supporter.social.facebook && (
