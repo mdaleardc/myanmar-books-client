@@ -1,4 +1,3 @@
-import {Link} from "react-router"
 import clsx from "clsx";
 import { MdDownloadForOffline } from "react-icons/md";
 import underDeve from "../assets/file-Mi8QSP7upB7QbQ5MFo4jzi.webp"
@@ -58,7 +57,7 @@ const Books = ({filterData, isLoading}) => {
       ))
     }
     </div>
-    <Link to='/contact' className='mx-10 mb-10 bg-blue-500 text-white underline cursor-pointer hover:bg-blue-700 active:bg-violet-700 rounded-md w-fit py-1 px-2'>Contact Us</Link>
+    <a href='#contact' className='mx-10 mb-10 bg-blue-500 text-white underline cursor-pointer hover:bg-blue-700 active:bg-violet-700 rounded-md w-fit py-1 px-2'>Contact Us</a>
     </>
     )
 }
