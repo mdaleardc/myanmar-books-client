@@ -43,11 +43,11 @@ const Contact = () => {
   <h4 className='text-center text-lg font-semibold text-white mt-4' id='contact'>Contact Us</h4>
   <div className="text-center flex flex-row justify-center items-center gap-6">
     <a href="https://m.me/mdaismail.it" target="_blank" rel="noopener noreferrer" className='flex flex-row gap-2 text-xl text-blue-400 underline hover:text-blue-500 transition duration-300'>
-    <FaFacebookMessenger size='25'/>
+    <FaFacebookMessenger size='25' className='text-white'/>
   Message Us
     </a>
     <a href="mailto:dismailait@gmail.com?subject=From: Myanmar School Books" className='flex flex-row gap-2 text-xl text-blue-400 underline hover:text-blue-500 transition duration-300'>
-    <MdEmail size='25'/>
+    <MdEmail size='25' className='text-white'/>
       Email Us
     </a>
   </div>

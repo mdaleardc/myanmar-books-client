@@ -1,10 +1,10 @@
-import { FaFacebook, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaYoutube, FaWhatsappSquare } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 
 const supporters = [
   {
     name: "Mr. Nurul Hakim",
-    contribution: "Supports providing and curating PDF file resources for our community",
+    contribution: "Supports curating and providing PDF file resources for our community",
     about: "Nurul Hakim, an educator, co-developed a Google-based PDF bookstore to make quality educational resources accessible. By sharing his own books, he promotes knowledge-sharing and limitless learning.",
     //image: "https://res.cloudinary.com/dubmzlovd/image/upload/v1738652247/414676626_695336989392924_2616853107996399_n_mvmfdo.jpg",
     image: "https://res.cloudinary.com/dubmzlovd/image/upload/v1738653886/IMG_20250204_132416_q7wxtb.jpg",
@@ -12,6 +12,7 @@ const supporters = [
       facebook: "https://www.facebook.com/share/18swrfGuZm/",
       twitter: "https://x.com/NurHaki85261693?s=09",
       youtube: "https://youtube.com/@seekknowledg?si=U5-Ns_6ErEIm7R5U",
+      whatsapp: "https://wa.me/8801767746571",
     },
   },
   // Add more supporters as needed
@@ -43,7 +44,7 @@ Special thanks to those who contributed to making this project possible!
       {supporter.contribution}
     </p>
         <p className="indent-6 text-gray-500 mt-2 text-sm leading-relaxed text-justify">
-      {supporter.about}
+        {supporter.about}
     </p>
     <div className="mt-4 flex space-x-6">
       {supporter.social.facebook && (
@@ -71,6 +72,15 @@ Special thanks to those who contributed to making this project possible!
           rel="noopener noreferrer"
           className="text-red-500 hover:text-pink-700 flext">
           <FaYoutube size='25'/>
+        </a>
+      )}
+      {supporter.social.whatsapp && (
+        <a
+          href={supporter.social.whatsapp}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-green-500 hover:text-green-700 flext">
+          <FaWhatsappSquare size='20'/>
         </a>
       )}
     </div>
