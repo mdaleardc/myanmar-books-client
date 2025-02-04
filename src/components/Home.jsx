@@ -69,6 +69,7 @@ const Home = () => {
     <div className="mt-[5.6rem]">
     <Books filterData={filterData} isLoading={isLoading}/>
     <About />
+    <Supporters />
     <Share />
     </div>
     </>
