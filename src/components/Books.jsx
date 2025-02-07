@@ -49,7 +49,7 @@ const Books = ({ filterData, isLoading }) => {
       ) : (
         sortedGrades.map((grade) => (
           <div key={grade} className="mb-6">
-            <h2 className="mx-auto text-center text-2xl text-pink-600 font-bold text-gray-800 mb-4">{grade.replace(/_/g, " ")}</h2>
+            <h2 className="mx-auto text-center text-2xl text-pink-600 underline font-bold text-gray-800 mb-4">{grade.replace(/_/g, " ")}</h2>
             <div className="p-2 w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {groupedBooks[grade].map((book, i) => (
                 <div
