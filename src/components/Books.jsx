@@ -1,7 +1,11 @@
 import clsx from "clsx";
+import dayjs from "dayjs";
+import relativeTime from "dayjs/plugin/relativeTime"
 import { MdDownloadForOffline } from "react-icons/md";
 import underDeve from "../assets/file-Mi8QSP7upB7QbQ5MFo4jzi.webp"
 
+
+dayjs.extend(relativeTime);
 
 const Books = ({ filterData, isLoading }) => {
   console.log(filterData);
@@ -74,14 +78,13 @@ const Books = ({ filterData, isLoading }) => {
                       <p className="text-[red] font-semibold">Under Development!</p>
                     </div>
                   )}
-                  <h2 className="text-base font-medium text-gray-800 px-2">
+                  <h2 className="text-base font-medium text-gray-800 px-2 pt-2">
                     {book.title.replace(/[_-]/g, " ").replace("Answers", "အဖြေစုံ")}
                   </h2>
-                  {book.clicks > 0 && (
-                    <p className="flex flex-row items-center justify-center text-gray-700">
-                      <MdDownloadForOffline size="25" /> {book.clicks}
+                    <p className="flex flex-row items-center justify-center text-red-500">
+                      <MdDownloadForOffline size="25" cl/> {book.clicks}
+                      <span className='px-2 text-gray-500 text-xs font-semibold'>{dayjs(book.createdAt).fromNow()}</span>
                     </p>
-                  )}
                   <a
                     href={`${import.meta.env.VITE_APP_API_URL}/download/${book._id}`}
                     target="_blank"
