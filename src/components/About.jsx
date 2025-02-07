@@ -48,10 +48,15 @@ const About = () => {
       <div className="mt-12 max-w-4xl mx-auto text-center">
       <h4 className="text-xl font-bold text-center text-[#ff00cc]">Follow on</h4>
       <div className='mx-auto text-center flex flex-row items-center justify-center gap-5 mt-4'>
-      <a href='https://github.com/mdaleardc' target='_blank'><FaGithub size='25' className='text-[#181717]'/></a>
-      <a href='https://www.facebook.com/mdaismail.it' target='_blank'><FaFacebook size='25' className='text-[#1877F2]'/></a>
-      <a href='https://x.com/MdIsmail5851415' target='_blank'><FaSquareXTwitter size='25'className='text-black'/></a>
-      <a href='https://bd.linkedin.com/in/mohammed-ismail-601457217' target='_blank'><FaLinkedin size='25' className='text-[#0A66C2]'/></a>
+      <a
+      aria-label='Follow me on github'
+      href='https://github.com/mdaleardc' target='_blank'><FaGithub size='25' className='text-[#181717]'/></a>
+      <a href='https://www.facebook.com/mdaismail.it' target='_blank'
+      aria-label='Follow me on facebook'><FaFacebook size='25' className='text-[#1877F2]'/></a>
+      <a href='https://x.com/MdIsmail5851415' target='_blank'
+      aria-label='Follow me on X (twitter)'><FaSquareXTwitter size='25'className='text-black'/></a>
+      <a href='https://bd.linkedin.com/in/mohammed-ismail-601457217' target='_blank'
+      aria-label='Contact me on linkedin'><FaLinkedin size='25' className='text-[#0A66C2]'/></a>
       </div>
       </div>
 

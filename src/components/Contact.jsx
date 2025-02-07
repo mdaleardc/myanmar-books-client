@@ -40,13 +40,17 @@ const Contact = () => {
   <p className="text-white text-center tracking-wider py-2">
     Have suggestions, feedback, or inquiries? Reach out by clicking on the options below.
   </p>
-  <h4 className='text-center text-lg font-semibold text-white mt-4' id='contact'>Contact Us</h4>
+  <h2 className='text-center text-lg font-semibold text-white mt-4' id='contact'>Contact Us</h2>
   <div className="text-center flex flex-row justify-center items-center gap-6">
-    <a href="https://m.me/mdaismail.it" target="_blank" rel="noopener noreferrer" className='flex flex-row gap-2 text-xl text-blue-400 underline hover:text-blue-500 transition duration-300'>
+    <a
+    aria-label='Message us on messenger'
+    href="https://m.me/mdaismail.it" target="_blank" rel="noopener noreferrer" className='flex flex-row gap-2 text-xl text-blue-400 underline hover:text-blue-500 transition duration-300'>
     <FaFacebookMessenger size='25' className='text-white'/>
   Message Us
     </a>
-    <a href="mailto:dismailait@gmail.com?subject=From: Myanmar School Books" className='flex flex-row gap-2 text-xl text-blue-400 underline hover:text-blue-500 transition duration-300'>
+    <a 
+    aria-label='Email us via email'
+    href="mailto:dismailait@gmail.com?subject=From: Myanmar School Books" className='flex flex-row gap-2 text-xl text-blue-400 underline hover:text-blue-500 transition duration-300'>
     <MdEmail size='25' className='text-white'/>
       Email Us
     </a>

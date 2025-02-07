@@ -62,7 +62,8 @@ const Home = () => {
     <h1 className='text-sm sm:text-md font-semibold text-[#fff] text-center mt-3 mb-2'>Download All PDF Books For Free</h1>
     <form className='mx-auto text-center flex flex-row items-center justify-center gap-2' onSubmit={handleSearch}>
     <input type="text" placeholder="Search books" className="rounded-md w-3/6 sm:w-2/5 outline-none border focus:ring-[0.05rem] ring-[#02ff02] py-px px-1 text-xl" value={searchQuery} onChange={(e)=> setSearchQuery(e.target.value)}/>
-    <button type="submit" className="inline-block rounded-md bg-[#007bff] text-white py-1 px-2 transition-colors duration-300 hover:bg-[#0056b3]">Search</button>
+    <button type="submit" className="inline-block rounded-md bg-[#007bff] text-white py-1 px-2 transition-colors duration-300 hover:bg-[#0056b3]"
+    aria-label='Search pdf'>Search</button>
     </form>
     </div>
     </div>
