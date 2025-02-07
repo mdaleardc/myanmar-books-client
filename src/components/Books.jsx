@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import dayjs from "dayjs";
+import propTypes from "prop-types"
 import relativeTime from "dayjs/plugin/relativeTime"
 import { MdDownloadForOffline } from "react-icons/md";
 import underDeve from "../assets/file-Mi8QSP7upB7QbQ5MFo4jzi.webp"
@@ -8,7 +9,6 @@ import underDeve from "../assets/file-Mi8QSP7upB7QbQ5MFo4jzi.webp"
 dayjs.extend(relativeTime);
 
 const Books = ({ filterData, isLoading }) => {
-  console.log(filterData);
 
   // Group books by grade
   const groupedBooks = filterData?.reduce((acc, book) => {
@@ -114,5 +114,11 @@ const Books = ({ filterData, isLoading }) => {
     </>
   );
 };
+
+// add props validation 
+Books.propTypes = {
+  filterData: propTypes.array.isRequired, // Validate filterData as an array
+  isLoading: propTypes.bool.isRequired,  // Validate isLoading as a boolean
+}
 
 export default Books;

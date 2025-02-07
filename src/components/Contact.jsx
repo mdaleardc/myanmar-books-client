@@ -18,7 +18,7 @@ const Contact = () => {
 
 <h3 className="text-yellow-500 text-center font-semibold text-xl py-2">Join Me</h3>
 <p className="indent-6 max-w-2xl mx-auto text-justify leading-relaxed text-base">
-  I'm looking for passionate designers, developers, and project managers to create outstanding web experiences together.
+  I&apos;m looking for passionate designers, developers, and project managers to create outstanding web experiences together.
 </p>
 
 <h3 className="text-yellow-500 text-center font-semibold text-xl py-2">How We Can Work Together</h3>
@@ -33,10 +33,10 @@ const Contact = () => {
   Ready to collaborate? Reach out via the contact form below.
 </p>
 <p className="max-w-2xl pt-2 text-right leading-relaxed text-base">
-  <em>Let's build something amazing together!</em>
+  <em>Let&apos;s build something amazing together!</em>
 </p></div>
 <div className='mx-4'>
-  <h1 className="text-[#0ef] text-center text-2xl font-semibold my-4 tracking-wider">We'd Love to Hear From You!</h1>
+  <h1 className="text-[#0ef] text-center text-2xl font-semibold my-4 tracking-wider">We&apos;d Love to Hear From You!</h1>
   <p className="text-white text-center tracking-wider py-2">
     Have suggestions, feedback, or inquiries? Reach out by clicking on the options below.
   </p>

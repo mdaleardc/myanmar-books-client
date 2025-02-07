@@ -27,7 +27,7 @@ const Home = () => {
       }
     }
     fetchBooks();
-  },[]);
+  },[api_url]);
   
   const handleSearch = (e) => {
     e.preventDefault();

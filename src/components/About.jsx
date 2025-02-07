@@ -1,4 +1,3 @@
-import React from 'react';
 import { FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import Contact from "./Contact";
