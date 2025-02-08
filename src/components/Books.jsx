@@ -38,16 +38,13 @@ const Books = ({ filterData, isLoading }) => {
     <>
       {isLoading ? (
         <div className="p-2 w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {Array(6)
+          {Array(13)
             .fill("")
             .map((_, index) => (
               <div
                 key={index}
-                className="animate-pulse bg-gray-300 rounded-md p-4 h-[80px] flex flex-col justify-center items-center"
+                className="animate-pulse bg-gray-300 rounded-md p-4 h-[50px] flex flex-col justify-center items-center"
               >
-                <div className="w-full h-3/5 bg-gray-400 rounded-md"></div>
-                <p className="h-4 bg-gray-400 rounded w-3/4 mt-2"></p>
-                <p className="h-4 bg-gray-400 rounded w-1/2 mt-1"></p>
               </div>
             ))}
         </div>
