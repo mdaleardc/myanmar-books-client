@@ -9,8 +9,8 @@ const About = () => {
         {/* Introduction */}
         <h2 className="text-3xl font-bold text-gray-800 mb-4">About Our Platform</h2>
         <p className="text-gray-600 text-lg leading-relaxed text-justify">
-          Welcome to our free PDF book download website! Our platform is dedicated to providing students, teachers, and book enthusiasts access to a wide range of educational resources and textbooks for grades 1 through 12. Whether you’re looking for textbooks or answer guides, we’ve got you covered—all completely free!
-        </p>
+  Welcome to our free PDF book download site! We provide textbooks and answer guides for grades 1-12, all at no cost.
+</p>
       </div>
 
       {/* What We Offer Section */}
@@ -18,9 +18,7 @@ const About = () => {
         <div className="p-6 bg-white shadow rounded-lg">
           <h3 className="text-xl font-semibold text-gray-700 mb-2">Why Choose Us?</h3>
           <p className="text-gray-600 leading-relaxed text-justify">
-            Our mission is to make education accessible to everyone. With a simple interface, 
-            organized resources, and quick downloads, we aim to support your learning journey 
-            without any financial burden.
+            Our mission is to make education accessible to everyone. With a simple interface, organized resources, and quick downloads, we aim to support your learning journey without any financial burden.
           </p>
         </div>
         <div className="p-6 bg-white shadow rounded-lg">
