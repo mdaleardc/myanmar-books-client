@@ -50,6 +50,7 @@ Special thanks to those who contributed to making this project possible!
     <div className="mt-4 flex space-x-6">
       {supporter.social.facebook && (
         <a
+        aria-label='Follow on facebook'
           href={supporter.social.facebook}
           target="_blank"
           rel="noopener noreferrer"
@@ -59,6 +60,7 @@ Special thanks to those who contributed to making this project possible!
       )}
       {supporter.social.twitter && (
         <a
+        aria-label='Follow on X (twitter)'
           href={supporter.social.twitter}
           target="_blank"
           rel="noopener noreferrer"
@@ -68,6 +70,7 @@ Special thanks to those who contributed to making this project possible!
       )}
       {supporter.social.youtube && (
         <a
+        aria-label='Subscribe on youtube'
           href={supporter.social.youtube}
           target="_blank"
           rel="noopener noreferrer"
@@ -77,6 +80,7 @@ Special thanks to those who contributed to making this project possible!
       )}
       {supporter.social.whatsapp && (
         <a
+        aria-label='Contact on whatsapp'
           href={supporter.social.whatsapp}
           target="_blank"
           rel="noopener noreferrer"

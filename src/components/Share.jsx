@@ -27,6 +27,7 @@ return (
   <div className="flex flex-row justify-center items-center gap-6 my-4 justify-center">
     {/* Web Share / Copy Link */}
     <button
+    aria-label='Share this website'
       onClick={handleShare}
       className="rounded-md bg-green-500 text-white py-1 px-4 transition duration-300 hover:bg-green-700">
       <FaShare size='20'/>
@@ -35,6 +36,7 @@ return (
     {/* Social Media Links */}
     <div>
       <a
+      aria-label='Share this website on Whatsapp'
         href={`https://wa.me/?text=${encodeURIComponent(
           "Check out this awesome website for free PDF books: " + window.location.href
         )}`}
