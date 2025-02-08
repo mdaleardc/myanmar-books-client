@@ -1,13 +1,12 @@
 import { FaFacebook, FaYoutube, FaWhatsappSquare } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
-import supporterNurul from "../assets/supporter-nurul.jpg";
+import supporterNurul from "../assets/supporter-nurul.webp";
 
 const supporters = [
   {
     name: "Mr. Nurul Hakim",
     contribution: "Supports curating and providing PDF file resources for our community",
     about: "Nurul Hakim, an educator, co-developed a Google-based PDF bookstore to make quality educational resources accessible. By sharing his own books, he promotes knowledge-sharing and limitless learning.",
-    //image: "https://res.cloudinary.com/dubmzlovd/image/upload/v1738652247/414676626_695336989392924_2616853107996399_n_mvmfdo.jpg",
     image: supporterNurul,
     social: {
       facebook: "https://www.facebook.com/share/18swrfGuZm/",
@@ -34,6 +33,7 @@ Special thanks to those who contributed to making this project possible!
     className="w-72 bg-white p-6 shadow-md rounded-lg flex flex-col items-center"
   >
     <img
+    loading='lazy'
       src={supporter.image}
       alt={supporter.name}
       className="w-24 h-24 rounded-full mb-4 border-2 border-gray-300"

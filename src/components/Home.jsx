@@ -4,7 +4,7 @@ import Books from "./Books";
 import About from "./About";
 import Share from "./Share";
 import Supporters from "./Supporters";
-import developerImage from "../assets/developer.jpg";
+import developerImage from "../assets/developer.webp";
 
 const Home = () => {
   const api_url = import.meta.env.VITE_APP_API_URL;
