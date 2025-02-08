@@ -1,5 +1,6 @@
 import { FaFacebook, FaYoutube, FaWhatsappSquare } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
+import supporterNurul from "../assets/supporter-nurul.jpg";
 
 const supporters = [
   {
@@ -7,7 +8,7 @@ const supporters = [
     contribution: "Supports curating and providing PDF file resources for our community",
     about: "Nurul Hakim, an educator, co-developed a Google-based PDF bookstore to make quality educational resources accessible. By sharing his own books, he promotes knowledge-sharing and limitless learning.",
     //image: "https://res.cloudinary.com/dubmzlovd/image/upload/v1738652247/414676626_695336989392924_2616853107996399_n_mvmfdo.jpg",
-    image: "https://res.cloudinary.com/dubmzlovd/image/upload/v1738653886/IMG_20250204_132416_q7wxtb.jpg",
+    image: supporterNurul,
     social: {
       facebook: "https://www.facebook.com/share/18swrfGuZm/",
       twitter: "https://x.com/NurHaki85261693?s=09",

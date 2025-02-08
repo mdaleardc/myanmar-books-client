@@ -37,27 +37,35 @@ const About = () => {
       {/* About Me Section */}
       <div className="mt-12 max-w-4xl mx-auto text-center">
         <h3 className="text-3xl font-bold text-gray-800 mb-4">About Me</h3>
-        <h4 className='text-center text-2xl font-semibold'>This is me, <a href="https://ismaildevcode.netlify.app/" className='text-red-600'>Mohammed Ismail</a></h4>
+        <h4 className='text-center text-2xl font-semibold'>
+          This is me, <a href="https://ismaildevcode.netlify.app/" className='text-red-600'>Mohammed Ismail</a>
+        </h4>
         <p className="text-gray-600 text-lg leading-relaxed text-justify">
           I am a passionate web developer and educator who aims to bridge the gap between technology and education. As a teacher, I understand the challenges faced by students and educators. Through this platform, I hope to contribute to making learning resources more accessible to everyone. 
         </p>
-        <p className="text-gray-600 text-lg mt-4 leading-relaxed text-justify">In addition to this project, I’m working on building my skills in web development and Android software engineering. If you share similar interests or have ideas to make this platform better, I’d love to connect!
+        <p className="text-gray-600 text-lg mt-4 leading-relaxed text-justify">
+          In addition to this project, I’m working on building my skills in web development and Android software engineering. If you share similar interests or have ideas to make this platform better, I’d love to connect!
         </p>
       </div>
 
       <div className="mt-12 max-w-4xl mx-auto text-center">
-      <h4 className="text-xl font-bold text-center text-[#ff00cc]">Follow on</h4>
-      <div className='mx-auto text-center flex flex-row items-center justify-center gap-5 mt-4'>
-      <a
-      aria-label='Follow me on github'
-      href='https://github.com/mdaleardc' target='_blank'><FaGithub size='25' className='text-[#181717]'/></a>
-      <a href='https://www.facebook.com/mdaismail.it' target='_blank'
-      aria-label='Follow me on facebook'><FaFacebook size='25' className='text-[#1877F2]'/></a>
-      <a href='https://x.com/MdIsmail5851415' target='_blank'
-      aria-label='Follow me on X (twitter)'><FaSquareXTwitter size='25'className='text-black'/></a>
-      <a href='https://bd.linkedin.com/in/mohammed-ismail-601457217' target='_blank'
-      aria-label='Contact me on linkedin'><FaLinkedin size='25' className='text-[#0A66C2]'/></a>
-      </div>
+        <h4 className="text-xl font-bold text-center text-[#ff00cc]">Follow on</h4>
+        <div className='mx-auto text-center flex flex-row items-center justify-center gap-5 mt-4'>
+          <a
+            aria-label='Follow me on github'
+            href='https://github.com/mdaleardc' target='_blank'>
+            <FaGithub size='25' className='text-[#181717] h-[25px] w-[25px]' />
+          </a>
+          <a href='https://www.facebook.com/mdaismail.it' target='_blank' aria-label='Follow me on facebook'>
+            <FaFacebook size='25' className='text-[#1877F2] h-[25px] w-[25px]' />
+          </a>
+          <a href='https://x.com/MdIsmail5851415' target='_blank' aria-label='Follow me on X (twitter)'>
+            <FaSquareXTwitter size='25' className='text-black h-[25px] w-[25px]' />
+          </a>
+          <a href='https://bd.linkedin.com/in/mohammed-ismail-601457217' target='_blank' aria-label='Contact me on linkedin'>
+            <FaLinkedin size='25' className='text-[#0A66C2] h-[25px] w-[25px]' />
+          </a>
+        </div>
       </div>
 
       <Contact />
