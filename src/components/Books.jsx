@@ -43,7 +43,7 @@ const Books = ({ filterData, isLoading }) => {
             .map((_, index) => (
               <div
                 key={index}
-                className="animate-pulse bg-gray-300 rounded-md p-4 h-[280px] flex flex-col justify-center items-center"
+                className="animate-pulse bg-gray-300 rounded-md p-4 h-[80px] flex flex-col justify-center items-center"
               >
                 <div className="w-full h-3/5 bg-gray-400 rounded-md"></div>
                 <p className="h-4 bg-gray-400 rounded w-3/4 mt-2"></p>
