@@ -43,7 +43,7 @@ const Books = ({ filterData, isLoading }) => {
             .map((_, index) => (
               <div
                 key={index}
-                className="animate-pulse bg-gray-300 rounded-md p-4 h-[50px] flex flex-col justify-center items-center"
+                className="animate-pulse bg-gray-300 rounded-md p-4 h-[44px] flex flex-col justify-center items-center"
               >
               </div>
             ))}
@@ -74,14 +74,14 @@ const Books = ({ filterData, isLoading }) => {
               <div className="p-2 w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {groupedBooks[selectedGrade].map((book, i) => (
                   <div
-                    className="rounded-md shadow-md text-center pb-2 bg-zinc-200 transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
+                    className="rounded-md shadow-md text-center bg-zinc-200 transform transition-transform duration-300 p-2 hover:scale-105 hover:shadow-lg"
                     key={i}
                   >
                     {book.thumbnailUrl.trim() ? (
                       <img
                         src={book.thumbnailUrl}
                         alt="book's thumbnail"
-                        className="rounded-lg mx-auto w-11/12 h-[200px] mt-1 object-cover"
+                        className="rounded-lg mx-auto w-full h-[200px] object-cover"
                         loading="lazy"
                       />
                     ) : (
