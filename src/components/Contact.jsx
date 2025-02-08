@@ -3,7 +3,7 @@ import { MdEmail } from "react-icons/md";
 
 const Contact = () => {
   return (
-    <div className="py-[2rem] mt-4 rounded-lg mb-3 bg-gradient-to-tr px-4 from-[#523] to-[#325] shadow-lg" id='contact'>
+    <div className="py-[2rem] mt-4 rounded-lg mb-3 bg-gradient-to-tr px-4 from-[#523] to-[#325] shadow-lg">
       <div className="max-w-3xl mx-auto text-center text-white">
         <h1 className="text-[#0ef] text-3xl font-semibold mb-4">We&apos;d Love to Hear From You!</h1>
         <p className="text-base tracking-wider mb-6">
