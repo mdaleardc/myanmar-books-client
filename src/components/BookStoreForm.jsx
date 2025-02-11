@@ -140,6 +140,7 @@ const BookStoreForm = () => {
   <option value="">Select PDF Category</option>
     <option value="Textbook">Textbook</option>
     <option value="Answers">Answers</option>
+    <option value="Answer_Key">Answer Key</option>
     <option value="Guide">Guide</option>
     <option value="Notes">Notes</option>
     <option value="Worksheet">Worksheet</option>
