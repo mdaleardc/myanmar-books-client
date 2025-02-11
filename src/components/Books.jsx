@@ -36,23 +36,23 @@ return numA - numB;
 return (
 <div className='pb-6'>
 {isLoading ? (
-<div className="h-[460px] md:h-[300px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 p-2">
-{Array(13).fill("").map((_, index) => (
+<div className="h-[300px] md:h-[200px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 p-2">
+{Array(12).fill("").map((_, index) => (
 <div
 key={index}
-className="animate-pulse bg-gray-300 rounded-md p-4 h-[44px] flex flex-col justify-center items-center">
+className="animate-pulse bg-gray-300 rounded-md p-4 h-[35px] flex flex-col justify-center items-center">
 </div>
 ))}
 </div>
 ) : (
 <div>
 {/* Display Grade Names First */}
-<div className="h-[460px] md:h-[300px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 p-2">
+<div className="h-[300px] md:h-[200px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 p-2">
 {sortedGrades.map((grade) => (
 <button
 key={grade}
 onClick={() => setSelectedGrade(grade)}
-className={`text-lg font-semibold bg-blue-500 text-white p-2 rounded-md hover:bg-blue-700 transition ${
+className={`text-lg font-semibold bg-blue-500 text-white rounded-md hover:bg-blue-700 transition ${
   selectedGrade === grade ? "bg-blue-700" : ""
 }`}>
 {grade.replace(/_/g, " ")}
