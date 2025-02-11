@@ -9,7 +9,7 @@ const About = () => {
         {/* Introduction */}
         <h2 className="text-3xl font-bold text-gray-800 mb-4">About Our Platform</h2>
         <p className="text-gray-600 text-lg leading-relaxed text-justify">
-  Welcome to our free PDF book download site! We provide textbooks and answer guides for grades 1-12, all at no cost.
+  Welcome to our free PDF book download site! We provide textbooks, answer guides for grades 1-12, Islamic books, and a variety of other learning resources, all available at no cost.
 </p>
       </div>
 
@@ -22,14 +22,16 @@ const About = () => {
           </p>
         </div>
         <div className="p-6 bg-white shadow rounded-lg">
-          <h3 className="text-xl font-semibold text-gray-700 mb-2">What We Offer</h3>
-          <ul className="list-disc list-inside text-gray-600 leading-relaxed">
-            <li>Free access to textbooks and answer guides</li>
-            <li>Downloadable PDFs for offline use</li>
-            <li>Resources for grades 1 through 12</li>
-            <li>A user-friendly browsing experience</li>
-          </ul>
-        </div>
+  <h3 className="text-xl font-semibold text-gray-700 mb-2">What We Offer</h3>
+  <ul className="list-disc list-inside text-gray-600 leading-relaxed">
+    <li>Free access to textbooks and answer guides</li>
+    <li>Islamic books and religious learning resources</li>
+    <li>Downloadable PDFs for offline use</li>
+    <li>Resources for grades 1 through 12</li>
+    <li>Diverse educational materials for all ages</li>
+    <li>A user-friendly browsing experience</li>
+  </ul>
+</div>
       </div>
 
       {/* About Me Section */}
