@@ -77,55 +77,20 @@ const BookStoreForm = () => {
           <option value="Grade_11">Grade 11</option>
           <option value="Grade_12">Grade 12</option>
           <option value="General">General</option>
+          <option value="Islamic_Book">Islamic Book</option>
         </select>
 
         <label htmlFor="subject" className="block mb-2 font-semibold">
           Subject:
         </label>
-        <select
+        <input
           name="subject"
           id="subject"
           value={formData.subject}
           onChange={handleChange}
           required
-          className="w-full p-2 mb-4 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-green-300">
-  <option value="">Select Subject</option>
-    <option value="Myanmar">Myanmar</option>
-    <option value="English">English</option>
-    <option value="Mathematics">Mathematics</option>
-    <option value="Science">Science</option>
-    <option value="Social_Studies">Social Studies</option>
-    <option value="Life_Skills">Life Skills</option>
-    <option value="Physics">Physics</option>
-    <option value="Economics">Economics</option>
-    <option value="Biology">Biology</option>
-    <option value="Geometry">Geometry</option>
-    <option value="Art">Art</option>
-    <option value="Chemistry">Chemistry</option>
-    <option value="Grammar">Grammar</option>
-    <option value="History">History</option>
-    <option value="Geography">Geography</option>
-    <option value="Moral">Moral</option>
-    <option value="Islamic">Islamic</option>
-    <option value="Religious_Studies">Religious Studies</option>
-    <option value="Computer_Science">Computer Science</option>
-    <option value="Health_Education">Health Education</option>
-    <option value="Environmental_Studies">Environmental Studies</option>
-    <option value="Philosophy">Philosophy</option>
-    <option value="Psychology">Psychology</option>
-    <option value="Political_Science">Political Science</option>
-    <option value="Business_Studies">Business Studies</option>
-    <option value="Accounting">Accounting</option>
-    <option value="Physical_Education">Physical Education</option>
-    <option value="Technology">Technology</option>
-    <option value="Civics">Civics</option>
-    <option value="Home_Science">Home Science</option>
-    <option value="Agriculture">Agriculture</option>
-    <option value="Astronomy">Astronomy</option>
-    <option value="Literature">Literature</option>
-    <option value="Drama">Drama</option>
-    <option value="Ethics">Ethics</option>
-  </select>
+          placeholder='Subject name'
+          className="w-full p-2 mb-4 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-green-300"/>
 
         <label htmlFor="pdfType" className="block mb-2 font-semibold">
           PDF Type:
