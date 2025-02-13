@@ -10,9 +10,9 @@ const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white py-4 text-center">
   <p className="text-sm">
-    © {new Date().getFullYear()} Myanmar Book Store App. All rights reserved.
+    © {new Date().getFullYear()} Mohammed Ismail. All rights reserved.
   </p>
-  <p className="text-sm flex flex-row item-center justify-center gap-1">
+  <p className="text-sm">
     Created with ❤️ by{" "}
     <a
       href="https://ismaildevcode.netlify.app/"
@@ -22,7 +22,9 @@ const Footer = () => {
     >
       Mohammed Ismail
     </a>{" "}
-    using <FaReact size='15' className='text-[#00B6FF]'/> <BiLogoTailwindCss size='20'className='text-[#00D2FF]'/> <IoLogoNodejs size='15' className='text-[#60FF00]'/> <SiExpress size='15'/> <SiMongoose size='20' className='text-red-600'/> <BiLogoMongodb size='20' className='text-[#0BAE00]'/>
+    using: <br/>
+    <span className='flex flex-row item-center justify-center gap-1'><FaReact size='15' className='text-[#00B6FF]'/> <BiLogoTailwindCss size='20'className='text-[#00D2FF]'/> <IoLogoNodejs size='15' className='text-[#60FF00]'/> <SiExpress size='15'/> <SiMongoose size='20' className='text-red-600'/> <BiLogoMongodb size='20' className='text-[#0BAE00]'/>
+    </span>
   </p>
 </footer>
     )

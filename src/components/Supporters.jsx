@@ -1,6 +1,7 @@
 import { FaFacebook, FaYoutube, FaWhatsappSquare } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import supporterNurul from "../assets/supporter-nurul.webp";
+import supporterRofique from "../assets/supporter-rofique.webp";
 
 const supporters = [
   {
@@ -13,6 +14,16 @@ const supporters = [
       twitter: "https://x.com/NurHaki85261693?s=09",
       youtube: "https://youtube.com/@seekknowledg?si=U5-Ns_6ErEIm7R5U",
       whatsapp: "https://wa.me/8801767746571",
+    },
+  },
+  {
+    name: "Mr. Muhammed Rofique",
+    contribution: "Supports providing PDF file resources for our community",
+    about: "Muhammed Rofique's generous book donation to Myanmar Book Download expands access to essential educational resources.",
+    image: supporterRofique,
+    social: {
+      facebook: "#",
+      twitter: "#",
     },
   },
   // Add more supporters as needed
