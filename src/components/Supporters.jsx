@@ -16,16 +16,6 @@ const supporters = [
       whatsapp: "https://wa.me/8801767746571",
     },
   },
-  {
-    name: "Mr. Muhammed Rofique",
-    contribution: "Supports providing PDF file resources for our community",
-    about: "Muhammed Rofique's generous book donation to Myanmar Book Download expands access to essential educational resources.",
-    image: supporterRofique,
-    social: {
-      facebook: "#",
-      twitter: "#",
-    },
-  },
   // Add more supporters as needed
 ];
 
