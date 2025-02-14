@@ -1,7 +1,6 @@
 import { FaFacebook, FaYoutube, FaWhatsappSquare } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import supporterNurul from "../assets/supporter-nurul.webp";
-import supporterRofique from "../assets/supporter-rofique.webp";
 
 const supporters = [
   {
