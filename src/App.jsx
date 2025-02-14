@@ -3,7 +3,7 @@ import BookStoreForm from "./components/BookStoreForm";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
-import AdsHandler from "./AdsHandler"; // Import AdsHandler
+import AdsHandler from "./components/AdsHandler"; // Import AdsHandler
 import { BrowserRouter, Routes, Route } from "react-router";
 
 const App = () => {
