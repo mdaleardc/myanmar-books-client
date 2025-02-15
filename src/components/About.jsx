@@ -40,11 +40,16 @@ const About = () => {
         <h4 className='text-center text-2xl font-semibold'>
           This is me, <a href="https://ismaildevcode.netlify.app/" className='text-red-600'>Mohammed Ismail</a>
         </h4>
-        <p className="text-gray-600 text-lg leading-relaxed text-justify">
-          I am a passionate web developer and educator who aims to bridge the gap between technology and education. As a teacher, I understand the challenges faced by students and educators. Through this platform, I hope to contribute to making learning resources more accessible to everyone. 
+        <p className="text-gray-600 indent-6 text-lg leading-relaxed text-justify">
+          I am a passionate web developer and educator who aims to bridge the gap between technology and education.</p>
+        <p className="text-gray-600 indent-6 text-lg leading-relaxed text-justify">
+        As a teacher, I understand the challenges faced by students and educators. Through this platform, I hope to contribute to making learning resources more accessible to everyone. 
         </p>
-        <p className="text-gray-600 text-lg mt-4 leading-relaxed text-justify">
-          In addition to this project, I’m working on building my skills in web development and Android software engineering. If you share similar interests or have ideas to make this platform better, I’d love to connect!
+        <p className="text-gray-600 indent-6 text-lg mt-4 leading-relaxed text-justify">
+          In addition to this project, I’m working on building my skills in web development and Android software engineering.
+          </p>
+        <p className="text-gray-600 indent-6 text-lg leading-relaxed text-justify">
+        If you share similar interests or have ideas to make this platform better, I’d love to connect!
         </p>
       </div>
 
