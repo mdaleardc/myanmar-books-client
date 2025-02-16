@@ -25,7 +25,7 @@ const Contact = () => {
             <a
               aria-label="Email us via email"
               href="mailto:dismailait@gmail.com?subject=From: Myanmar School Books"
-              className="flex flex-col items-center gap-2 p-4 rounded-md bg-green-600 hover:bg-green-700 transition duration-300 text-white w-32"
+              className="flex flex-col items-center gap-2 p-4 rounded-md bg-green-700 hover:bg-green-800 transition duration-300 text-white w-32"
             >
               <MdEmail size="30" />
               <span className="text-sm font-semibold">Email Us</span>
