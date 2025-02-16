@@ -8,7 +8,7 @@ import developerImage from "../assets/developer.webp";
 
 const Home = () => {
   const api_url = import.meta.env.VITE_APP_API_URL;
-  const [booksData, setBooksData] = useState([]);
+ // const [booksData, setBooksData] = useState([]);
   const [filterData, setFilterData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -17,7 +17,7 @@ const Home = () => {
       try {
         setIsLoading(true);
         const response = await axios(`${api_url}/book-list`);
-        setBooksData(response.data.books);
+       // setBooksData(response.data.books);
         setFilterData(response.data.books);
       } catch (err) {
         console.error(err.message);

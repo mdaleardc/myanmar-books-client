@@ -1,24 +1,31 @@
-import Navbar from "./components/Navbar";
-import BookStoreForm from "./components/BookStoreForm";
-import Home from "./components/Home";
-import Footer from "./components/Footer";
-import Contact from "./components/Contact";
-//import AdsHandler from "./components/AdsHandler"; // Import AdsHandler
+import { Suspense, lazy } from "react";
 import { BrowserRouter, Routes, Route } from "react-router";
+
+// Lazy-loaded components
+const Navbar = lazy(() => import("./components/Navbar"));
+const Home = lazy(() => import("./components/Home"));
+const BookStoreForm = lazy(() => import("./components/BookStoreForm"));
+const Contact = lazy(() => import("./components/Contact"));
+const Footer = lazy(() => import("./components/Footer"));
 
 const App = () => {
   const api_endpoint = import.meta.env.VITE_APP_API_ENDPOINT;
 
   return (
     <BrowserRouter>
-      <Navbar />
-      {/*<AdsHandler /> This will refresh ads when route changes */}
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path={api_endpoint} element={<BookStoreForm />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-      <Footer />
+      <Suspense fallback={<div>Loading Navbar...</div>}>
+        <Navbar />
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path={api_endpoint} element={<BookStoreForm />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Suspense>
+      <Suspense fallback={<div>Loading Footer...</div>}>
+        <Footer />
+      </Suspense>
     </BrowserRouter>
   );
 };
