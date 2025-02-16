@@ -9,7 +9,7 @@ const About = () => {
         {/* Introduction */}
         <h2 className="text-3xl font-bold text-gray-800 mb-4">About Our Platform</h2>
         <p className="text-gray-600 text-lg leading-relaxed text-justify">
-  Welcome to our free PDF book download site! We provide textbooks, answer guides for grades 1-12, Islamic books, and a variety of other learning resources, all available at no cost.
+  <span>Welcome to our free PDF book download site! We provide textbooks,</span> <span>answer guides for grades 1-12, Islamic books, and a variety of other learning resources, all available at no cost.</span>
 </p>
       </div>
 
