@@ -4,7 +4,7 @@ import Books from "./Books";
 import About from "./About";
 import Share from "./Share";
 import Supporters from "./Supporters";
-import developerImage from "../assets/developer.webp";
+import weblogo from "../assets/logo.webp";
 
 const Home = () => {
   const api_url = import.meta.env.VITE_APP_API_URL;
@@ -31,19 +31,19 @@ const Home = () => {
   return (
     <>
       <div className="flex flex-row justify-between items-center gap-2 fixed top-0 left-0 z-50 w-full bg-gradient-to-tr from-green-800 to-[#FF005C] pb-2 mx-auto">
-        <a
-          href="https://ismaildevcode.netlify.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="ml-[2px] block w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] rounded-full border border-zinc-300 flex flex-row items-center mt-1"
-        >
-          <img
-            src={developerImage}
-            loading="lazy"
-            alt="Developer image"
-            className="w-full h-full rounded-full object-cover"
-          />
-        </a>
+       <a
+  href="https://ismaildevcode.netlify.app/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="ml-[2px] block w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] rounded-full border-2 border-transparent hover:border-zinc-400 transition-all duration-300 ease-in-out flex flex-row items-center mt-1 shadow-sm hover:shadow-md"
+>
+  <img
+    src={weblogo}
+    loading="lazy"
+    alt="Developer image"
+    className="w-full h-full rounded-full object-cover transform hover:scale-105 transition-transform duration-300 ease-in-out"
+  />
+</a>
         <div className="flex flex-col w-10/12">
           <h1 className="text-sm sm:text-md font-semibold text-[#fff] text-center mt-1 mb-1">
             Download All PDF Books For Free
