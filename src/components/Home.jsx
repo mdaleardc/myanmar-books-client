@@ -8,16 +8,14 @@ import weblogo from "../assets/logo.webp";
 
 const Home = () => {
   const api_url = import.meta.env.VITE_APP_API_URL;
- // const [booksData, setBooksData] = useState([]);
   const [filterData, setFilterData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [clickCount, setClickCount] = useState(0);
 
-  useEffect(() => {
     const fetchBooks = async () => {
       try {
         setIsLoading(true);
         const response = await axios(`${api_url}/book-list`);
-       // setBooksData(response.data.books);
         setFilterData(response.data.books);
       } catch (err) {
         console.error(err.message);
@@ -25,9 +23,19 @@ const Home = () => {
         setIsLoading(false);
       }
     };
+    
+  useEffect(() => {
     fetchBooks();
   }, [api_url]);
-
+  
+  useEffect(()=> {
+    const totalClicks = filterData.reduce((acc, book) => acc + (book.clicks || 0), 0);
+    setClickCount(totalClicks);
+  }, [filterData]);
+ 
+ console.log(clickCount);
+   
+ 
   return (
     <>
       <div className="flex flex-row justify-between items-center gap-2 fixed top-0 left-0 z-50 w-full bg-gradient-to-tr from-green-800 to-[#FF005C] pb-2 mx-auto">
@@ -48,9 +56,7 @@ const Home = () => {
           <h1 className="text-sm sm:text-md font-semibold text-[#fff] text-center mt-1 mb-1">
             Download All PDF Books For Free
           </h1>
-          <p className="text-center text-lg text-[#fff] font-medium mt-1">
-            Click on grades to view books
-          </p>
+<p className='text-white text-sx font-light tracking-tighter whitespace-nowrap text-center'>Total Books Downloaded: {clickCount}</p>
         </div>
       </div>
 

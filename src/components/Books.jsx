@@ -1,8 +1,8 @@
 import { useState } from "react";
 import clsx from "clsx";
 import dayjs from "dayjs";
-import propTypes from "prop-types";
 import relativeTime from "dayjs/plugin/relativeTime";
+import propTypes from "prop-types";
 import { MdDownloadForOffline } from "react-icons/md";
 import underDeve from "../assets/file-Mi8QSP7upB7QbQ5MFo4jzi.webp";
 
