@@ -12,6 +12,7 @@ const Home = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [clickCount, setClickCount] = useState(0);
 
+  useEffect(() => {
     const fetchBooks = async () => {
       try {
         setIsLoading(true);
@@ -23,8 +24,6 @@ const Home = () => {
         setIsLoading(false);
       }
     };
-    
-  useEffect(() => {
     fetchBooks();
   }, [api_url]);
   
