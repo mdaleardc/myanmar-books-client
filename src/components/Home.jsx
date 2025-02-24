@@ -32,9 +32,6 @@ const Home = () => {
     setClickCount(totalClicks);
   }, [filterData]);
  
- console.log(clickCount);
-   
- 
   return (
     <>
       <div className="flex flex-row justify-between items-center gap-2 fixed top-0 left-0 z-50 w-full bg-gradient-to-tr from-green-800 to-[#FF005C] pb-2 mx-auto">
