@@ -39,20 +39,20 @@ const Books = ({ filterData, isLoading }) => {
   return (
     <div className="pb-6">
       {isLoading ? (
-        <div className="h-[300px] md:h-[200px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 p-2">
-          {Array(12)
+        <div className="h-[300px] md:h-[200px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 pt-2 px-2">
+          {Array(14)
             .fill("")
             .map((_, index) => (
               <div
                 key={index}
-                className="animate-pulse bg-gray-300 rounded-md p-4 h-[35px] flex flex-col justify-center items-center"
+                className="animate-pulse bg-gray-300 rounded-md p-4 h-[36px] flex flex-col justify-center items-center"
               ></div>
             ))}
         </div>
       ) : (
         <div>
           {/* Display Grade Names First */}
-          <div className="h-[300px] md:h-[200px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 p-2">
+          <div className="h-[300px] md:h-[200px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 p-2">
             {sortedGrades.map((grade) => {
   const bookCount = groupedBooks[grade].length;
   const totalClicks = groupedBooks[grade].reduce((sum, book) => sum + book.clicks, 0);
@@ -61,7 +61,7 @@ const Books = ({ filterData, isLoading }) => {
     <button
       key={grade}
       onClick={() => setSelectedGrade(grade)}
-      className={`text-lg font-semibold bg-green-600 rounded-md hover:bg-green-800 transition flex items-center justify-between px-2 ${
+      className={`text-lg font-semibold bg-green-600 rounded-md hover:bg-green-800 transition flex items-center justify-between px-2 py-1 ${
         selectedGrade === grade ? "bg-green-800 text-pink-600" : "text-white"
       }`}
     >
