@@ -75,7 +75,7 @@ const Books = ({ filterData, isLoading }) => {
           {selectedGrade && (
             <div className="mt-6">
               <h2 className="mx-auto text-center text-2xl text-pink-600 underline font-bold text-gray-900 mb-4">
-                {selectedGrade.replace(/_/g, " ")}
+                {selectedGrade.replace(/_/g, "-")}
               </h2>
               <div className="p-2 w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {groupedBooks[selectedGrade].map((book, i) => (
