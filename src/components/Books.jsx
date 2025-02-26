@@ -5,6 +5,8 @@ import relativeTime from "dayjs/plugin/relativeTime";
 import propTypes from "prop-types";
 import { MdDownloadForOffline } from "react-icons/md";
 import underDeve from "../assets/file-Mi8QSP7upB7QbQ5MFo4jzi.webp";
+import { IoBookSharp } from "react-icons/io5";
+import { MdDownload } from "react-icons/md";
 
 dayjs.extend(relativeTime);
 
@@ -51,17 +53,22 @@ const Books = ({ filterData, isLoading }) => {
         <div>
           {/* Display Grade Names First */}
           <div className="h-[300px] md:h-[200px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 p-2">
-            {sortedGrades.map((grade) => (
-              <button
-                key={grade}
-                onClick={() => setSelectedGrade(grade)}
-                className={`text-lg font-semibold bg-green-600 text-white rounded-md hover:text-red-500 hover:bg-green-800 transition ${
-                  selectedGrade === grade ? "bg-green-800" : ""
-                }`}
-              >
-                {grade.replace(/_/g, " ")}
-              </button>
-            ))}
+            {sortedGrades.map((grade) => {
+  const bookCount = groupedBooks[grade].length;
+  const totalClicks = groupedBooks[grade].reduce((sum, book) => sum + book.clicks, 0);
+
+  return (
+    <button
+      key={grade}
+      onClick={() => setSelectedGrade(grade)}
+      className={`text-lg font-semibold bg-green-600 text-white rounded-md hover:text-red-500 hover:scale-105 hover:bg-green-800 transition flex items-center justify-between px-2 ${
+        selectedGrade === grade ? "bg-green-800" : ""
+      }`}
+    >
+      {grade.replace(/_/g, " ")} <span className={`flex items-center gap-1 ${selectedGrade === grade ? "text-white":"text-zinc-700"} `}><IoBookSharp size='15'/> {bookCount}</span> <span className='flex items-center gap-1'> <MdDownloadForOffline size='15'/> {totalClicks}</span>
+    </button>
+  );
+})}
           </div>
 
           {/* Show Books Only When a Grade is Selected */}

@@ -77,7 +77,7 @@ const BookStoreForm = () => {
           <option value="Grade_11">Grade 11</option>
           <option value="Grade_12">Grade 12</option>
           <option value="General">General</option>
-          <option value="Islamic_Book">Islamic Book</option>
+          <option value="Islamic">Islamic</option>
         </select>
 
         <label htmlFor="subject" className="block mb-2 font-semibold">
