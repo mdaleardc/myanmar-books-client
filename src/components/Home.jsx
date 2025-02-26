@@ -52,7 +52,7 @@ const Home = () => {
           <h1 className="text-sm sm:text-md font-semibold text-[#fff] text-center mt-1 mb-1">
             Download All PDF Books For Free
           </h1>
-<p className='text-white text-sx font-light tracking-tighter whitespace-nowrap text-center'>Total Books Downloaded: {clickCount}</p>
+<p className='text-white text-sx font-light tracking-tighter whitespace-nowrap text-center'>Total Download: {clickCount}</p>
         </div>
       </div>
 
