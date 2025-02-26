@@ -55,8 +55,8 @@ const Books = ({ filterData, isLoading }) => {
               <button
                 key={grade}
                 onClick={() => setSelectedGrade(grade)}
-                className={`text-lg font-semibold bg-blue-600 text-white rounded-md hover:bg-blue-800 transition ${
-                  selectedGrade === grade ? "bg-blue-800" : ""
+                className={`text-lg font-semibold bg-green-600 text-white rounded-md hover:text-red-500 hover:bg-green-800 transition ${
+                  selectedGrade === grade ? "bg-green-800" : ""
                 }`}
               >
                 {grade.replace(/_/g, " ")}
