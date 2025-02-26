@@ -56,7 +56,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="mt-[5rem]">
+      <div className="pt-[5rem] bg-zinc-50">
         <Books filterData={filterData} isLoading={isLoading} />
         <About />
         <Supporters />

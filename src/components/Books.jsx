@@ -62,7 +62,7 @@ const Books = ({ filterData, isLoading }) => {
       key={grade}
       onClick={() => setSelectedGrade(grade)}
       className={`text-lg font-semibold bg-green-600 rounded-md hover:bg-green-800 transition flex items-center justify-between px-2 py-1 ${
-        selectedGrade === grade ? "bg-green-800 text-pink-600" : "text-white"
+        selectedGrade === grade ? "bg-green-700 text-pink-700" : "text-white"
       }`}
     >
       {grade.replace(/_/g, "-")} <span className='flex gap-2'><span className={`flex items-center gap-1 text-sm ${selectedGrade === grade ? "text-white":"text-pink-700"} `}><IoBookSharp size='15'/> {bookCount}</span> <span className='flex items-center gap-1 text-xs'> <MdDownloadForOffline size='15'/> {totalClicks}</span></span>
