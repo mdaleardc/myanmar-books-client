@@ -61,7 +61,7 @@ const Books = ({ filterData, isLoading }) => {
     <button
       key={grade}
       onClick={() => setSelectedGrade(grade)}
-      className={`text-lg font-semibold bg-green-600 rounded-md hover:bg-green-800 transition flex items-center justify-between px-2 py-1 ${
+      className={`text-lg font-semibold bg-green-600 rounded-md hover:bg-green-700 transition flex items-center justify-between px-2 py-1 ${
         selectedGrade === grade ? "bg-green-700 text-pink-700" : "text-white"
       }`}
     >
