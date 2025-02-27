@@ -104,8 +104,8 @@ const Books = ({ filterData, isLoading }) => {
                     <h2 className="text-base font-medium text-gray-900 px-2 pt-2">
                       {book.title.replace(/[_-]/g, " ").replace("Answers", "အဖြေစုံ")}
                     </h2>
-                    <p className="flex flex-row items-center justify-center text-red-500">
-                      <MdDownloadForOffline size="25" /> {book.clicks}
+                    <p className="flex flex-row items-center justify-center text-green-500">
+                      <MdDownloadForOffline size="18" /> {book.clicks}
                       <span className="px-2 text-gray-600 text-xs">
                         {dayjs(book.createdAt).fromNow()}
                       </span>
