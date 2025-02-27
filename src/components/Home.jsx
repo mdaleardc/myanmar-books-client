@@ -56,7 +56,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="pt-[5rem] bg-zinc-50">
+      <div className="pt-[5rem] bg-[#fffffe]">
         <Books filterData={filterData} isLoading={isLoading} />
         <About />
         <Supporters />
