@@ -39,20 +39,20 @@ const Books = ({ filterData, isLoading }) => {
   return (
     <div className="pb-6">
       {isLoading ? (
-        <div className="h-[300px] md:h-[200px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 pt-2 px-2">
+        <div className="h-[270px] md:h-[170px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 sm:gap-2 pt-1 px-2">
           {Array(14)
             .fill("")
             .map((_, index) => (
               <div
                 key={index}
-                className="animate-pulse bg-gray-300 rounded-full p-4 h-[36px] flex flex-col justify-center items-center"
+                className="animate-pulse bg-gray-300 rounded-full p-4 h-[35px] flex flex-col justify-center items-center"
               ></div>
             ))}
         </div>
       ) : (
         <div>
           {/* Display Grade Names First */}
-          <div className="h-[300px] md:h-[200px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 p-2">
+          <div className="h-[270px] md:h-[170px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 sm:gap-2 py-1 px-2">
             {sortedGrades.map((grade) => {
   const bookCount = groupedBooks[grade].length;
   const totalClicks = groupedBooks[grade].reduce((sum, book) => sum + book.clicks, 0);
@@ -61,11 +61,11 @@ const Books = ({ filterData, isLoading }) => {
     <button
       key={grade}
       onClick={() => setSelectedGrade(grade)}
-      className={`text-lg font-semibold bg-green-600 rounded-full transition flex items-center justify-between px-2 py-1 ${
+      className={`text-sx sm:text-xl font-semibold bg-green-600 rounded-full transition flex items-center justify-between px-2 py-1 ${
         selectedGrade === grade ? "bg-green-700 text-pink-700" : "text-white"
       }`}
     >
-      {grade.replace(/_/g, "-")} <span className='flex gap-2'><span className={`flex items-center gap-1 text-sm ${selectedGrade === grade ? "text-white":"text-pink-700"} `}><IoBookSharp size='15'/> {bookCount}</span> <span className='flex items-center gap-1 text-xs'> <MdDownloadForOffline size='15'/> {totalClicks}</span></span>
+      {grade.replace(/_/g, "-")} <span className='flex gap-2'><span className={`flex items-center gap-1 text-sm ${selectedGrade === grade ? "text-white":"text-pink-700"} `}><IoBookSharp size='15'/> {bookCount}</span> <span className='hidden sm:flex items-center gap-1 text-xs'> <MdDownloadForOffline size='15'/> {totalClicks}</span></span>
     </button>
   );
 })}
