@@ -39,7 +39,7 @@ const Books = ({ filterData, isLoading }) => {
   return (
     <div className="pb-6">
       {isLoading ? (
-        <div className="h-[270px] md:h-[170px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 sm:gap-2 pt-1 px-2">
+        <div className="h-[270px] md:h-[200px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 sm:gap-2 pt-1 px-2">
           {Array(14)
             .fill("")
             .map((_, index) => (
@@ -52,7 +52,7 @@ const Books = ({ filterData, isLoading }) => {
       ) : (
         <div>
           {/* Display Grade Names First */}
-          <div className="h-[270px] md:h-[170px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 sm:gap-2 py-1 px-2">
+          <div className="h-[270px] md:h-[200px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 sm:gap-2 py-1 px-2">
             {sortedGrades.map((grade) => {
   const bookCount = groupedBooks[grade].length;
   const totalClicks = groupedBooks[grade].reduce((sum, book) => sum + book.clicks, 0);
