@@ -61,8 +61,8 @@ const Books = ({ filterData, isLoading }) => {
     <button
       key={grade}
       onClick={() => setSelectedGrade(grade)}
-      className={`text-sx sm:text-xl font-semibold bg-[#0F008A] rounded-full transition flex items-center justify-between px-2 py-1 ${
-        selectedGrade === grade ? "bg-[#08004C] text-[gold]" : "text-white"
+      className={`text-sx sm:text-xl font-semibold bg-[#00008A] rounded-full transition flex items-center justify-between px-2 py-1 ${
+        selectedGrade === grade ? "text-[gold]" : "text-white"
       }`}
     >
       {grade.replace(/_/g, "-")} <span className='flex gap-2'><span className={`flex items-center gap-1 text-sm ${selectedGrade === grade ? "text-[gold]":"text-white"} `}><IoBookSharp size='15'/> {bookCount}</span> <span className='hidden sm:flex items-center gap-1 text-xs'> <MdDownloadForOffline size='15'/> {totalClicks}</span></span>
