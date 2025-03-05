@@ -6,7 +6,7 @@ const handleShare = () => {
   if (navigator.share) {
     navigator.share({
       title: "Download Free PDF Books",
-      text: "Check out this awesome website for free PDF books!",
+      text: "Check out this awesome website for free PDF books download!",
       url: window.location.href,
     })
       .then(() => console.log("Shared successfully!"))
@@ -38,7 +38,7 @@ return (
       <a
       aria-label='Share this website on Whatsapp'
         href={`https://wa.me/?text=${encodeURIComponent(
-          "Check out this awesome website for free PDF books: " + window.location.href
+          "Check out this awesome website for free PDF books download: " + window.location.href
         )}`}
         target="_blank"
         rel="noopener noreferrer"

@@ -77,7 +77,7 @@ const Books = ({ filterData, isLoading }) => {
               <h2 className="mx-auto text-center text-2xl text-pink-600 underline font-bold text-gray-900 mb-4">
                 {selectedGrade.replace(/_/g, "-")}
               </h2>
-              <div className="p-2 w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              <div className="p-2 w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 {groupedBooks[selectedGrade].map((book, i) => (
                   <div
                     className="rounded-md shadow-md text-center bg-zinc-200 transform transition-transform duration-300 p-2 hover:scale-105 hover:shadow-lg"
@@ -101,7 +101,7 @@ const Books = ({ filterData, isLoading }) => {
                         <p className="text-[red] font-semibold">Under Development!</p>
                       </div>
                     )}
-                    <h2 className="text-base font-medium text-gray-900 px-2 pt-2">
+                    <h2 className="text-base font-medium text-zinc-900 px-2 pt-2">
                       {book.title.replace(/[_-]/g, " ").replace("Answers", "အဖြေစုံ")}
                     </h2>
                     <p className="flex flex-row items-center justify-center text-green-500">
