@@ -75,7 +75,7 @@ const About = () => {
       <p className="indent-6 text-gray-600 mt-2 text-sm leading-relaxed text-justify">
         🚀 Have ideas? Let’s connect!
       </p>
-            <div className='mx-auto text-center flex flex-row items-center justify-center gap-5 mt-4'>
+            <div className='mx-auto text-center flex flex-row items-center justify-center gap-6 mt-4'>
           <a
             aria-label='Follow me on github'
             href='https://github.com/mdaleardc' target='_blank'>
