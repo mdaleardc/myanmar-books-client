@@ -35,7 +35,7 @@ const About = () => {
       </div>
 
 {/* About Me Section */}
-<div className="mt-12">
+<div className="mt-12 mb-10">
   <h3 className="text-3xl font-bold text-gray-800 mb-4 text-center">About Me</h3>
 
   <div className="max-w-4xl mx-auto text-center">
@@ -75,13 +75,7 @@ const About = () => {
       <p className="indent-6 text-gray-600 mt-2 text-sm leading-relaxed text-justify">
         🚀 Have ideas? Let’s connect!
       </p>
-    </div>
-  </div>
-</div>
-
-      <div className="mt-12 max-w-4xl mx-auto text-center">
-        <h4 className="text-xl font-bold text-center text-[#ff00cc]">Follow on</h4>
-        <div className='mx-auto text-center flex flex-row items-center justify-center gap-5 mt-4'>
+            <div className='mx-auto text-center flex flex-row items-center justify-center gap-5 mt-4'>
           <a
             aria-label='Follow me on github'
             href='https://github.com/mdaleardc' target='_blank'>
@@ -97,7 +91,9 @@ const About = () => {
             <FaLinkedin size='25' className='text-[#0A66C2] h-[25px] w-[25px]' />
           </a>
         </div>
-      </div>
+        </div>
+  </div>
+</div>
 
       <Contact />
     </section>
