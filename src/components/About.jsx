@@ -1,6 +1,7 @@
 import { FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import Contact from "./Contact";
+import developer from "../assets/developer.webp"
 
 const About = () => {
   return (
@@ -33,24 +34,50 @@ const About = () => {
 </div>
       </div>
 
-      {/* About Me Section */}
-      <div className="mt-12 max-w-4xl mx-auto text-center">
-        <h3 className="text-3xl font-bold text-gray-800 mb-4">About Me</h3>
-        <h4 className='text-center text-2xl font-semibold'>
-          This is me, <a href="https://ismaildevcode.netlify.app/" className='text-red-600'>Mohammed Ismail</a>
-        </h4>
-        <p className="text-gray-600 indent-6 text-lg leading-relaxed text-justify">
-          I am a passionate web developer and educator who aims to bridge the gap between technology and education.</p>
-        <p className="text-gray-600 indent-6 text-lg leading-relaxed text-justify">
-        As a teacher, I understand the challenges faced by students and educators. Through this platform, I hope to contribute to making learning resources more accessible to everyone. 
-        </p>
-        <p className="text-gray-600 indent-6 text-lg mt-4 leading-relaxed text-justify">
-          In addition to this project, I’m working on building my skills in web development and Android software engineering.
-          </p>
-        <p className="text-gray-600 indent-6 text-lg leading-relaxed text-justify">
-        If you share similar interests or have ideas to make this platform better, I’d love to connect!
-        </p>
-      </div>
+{/* About Me Section */}
+<div className="mt-12">
+  <h3 className="text-3xl font-bold text-gray-800 mb-4 text-center">About Me</h3>
+
+  <div className="max-w-4xl mx-auto text-center">
+    <div className="bg-white shadow-lg rounded-lg p-6 border border-gray-200">
+      {/* Profile Image */}
+      <a href="/src/assets/developer.webp">
+      <img 
+        src={developer} 
+        alt="Mohammed Ismail" 
+        className="w-32 h-32 mx-auto rounded-full mb-4 border-4 border-gray-300"
+      />
+      </a>
+      
+      <h4 className="text-2xl font-semibold">
+        This is me,  
+        <a href="https://ismaildevcode.netlify.app/" className="text-blue-600 ml-1">
+          Mohammed Ismail
+        </a>
+      </h4>
+
+      <p className="text-gray-600 font-semibold mt-2 text-sm">
+        I am the developer of this website, dedicated to providing free educational resources for all.
+      </p>
+
+      <p className="indent-6 text-gray-600 mt-2 text-sm leading-relaxed text-justify">
+        A passionate web developer & educator, bridging the gap between technology and education.
+      </p>
+      
+      <p className="indent-6 text-gray-600 mt-2 text-sm leading-relaxed text-justify">
+        I understand the challenges faced by students and educators and aim to make learning resources more accessible.
+      </p>
+
+      <p className="indent-6 text-gray-600 mt-2 text-sm leading-relaxed text-justify">
+        I'm also enhancing my skills in web and Android development.
+      </p>
+
+      <p className="indent-6 text-gray-600 mt-2 text-sm leading-relaxed text-justify">
+        🚀 Have ideas? Let’s connect!
+      </p>
+    </div>
+  </div>
+</div>
 
       <div className="mt-12 max-w-4xl mx-auto text-center">
         <h4 className="text-xl font-bold text-center text-[#ff00cc]">Follow on</h4>
