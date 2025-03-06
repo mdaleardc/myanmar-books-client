@@ -49,7 +49,7 @@ const About = () => {
       </a>
       
       <h4 className="text-2xl font-semibold">
-        <a href="https://ismaildevcode.netlify.app/" className="text-[orange] ml-1">
+        <a href="https://ismaildevcode.netlify.app/" className="text-pink-600 ml-1">
           Mohammed Ismail
         </a>
       </h4>
