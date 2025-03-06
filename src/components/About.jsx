@@ -35,7 +35,7 @@ const About = () => {
 
 {/* About Me Section */}
 <div className="mt-12 mb-10">
-  <h3 className="text-3xl font-bold text-pink-600 mb-4 text-center">About Me</h3>
+  <h3 className="text-3xl font-bold text-green-700 mb-4 text-center">About Me</h3>
 
   <div className="max-w-4xl mx-auto text-center">
     <div className="bg-white shadow-lg rounded-lg p-6 border border-gray-200">
