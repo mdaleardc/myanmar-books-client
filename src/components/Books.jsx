@@ -6,7 +6,6 @@ import propTypes from "prop-types";
 import { MdDownloadForOffline } from "react-icons/md";
 import underDeve from "../assets/file-Mi8QSP7upB7QbQ5MFo4jzi.webp";
 import { IoBookSharp } from "react-icons/io5";
-import { MdDownload } from "react-icons/md";
 
 dayjs.extend(relativeTime);
 

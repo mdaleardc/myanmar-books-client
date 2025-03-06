@@ -1,10 +1,3 @@
-import { FaReact } from "react-icons/fa";
-import { SiExpress, SiMongoose } from "react-icons/si";
-import { IoLogoNodejs } from "react-icons/io5";
-import { BiLogoMongodb, BiLogoTailwindCss } from "react-icons/bi";
-
-
-
 const Footer = () => {
   
   return (

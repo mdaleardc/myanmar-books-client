@@ -1,7 +1,6 @@
-import { FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaFacebook, FaGlobe } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import Contact from "./Contact";
-import developer from "../assets/developer.webp"
 
 const About = () => {
   return (
@@ -36,28 +35,27 @@ const About = () => {
 
 {/* About Me Section */}
 <div className="mt-12 mb-10">
-  <h3 className="text-3xl font-bold text-gray-800 mb-4 text-center">About Me</h3>
+  <h3 className="text-3xl font-bold text-pink-600 mb-4 text-center">About Me</h3>
 
   <div className="max-w-4xl mx-auto text-center">
     <div className="bg-white shadow-lg rounded-lg p-6 border border-gray-200">
       {/* Profile Image */}
-      <a href="/src/assets/developer.webp">
+      <a href='https://www.facebook.com/mdaismail.it'>
       <img 
-        src={developer} 
+        src='https://res.cloudinary.com/dubmzlovd/image/upload/v1741245462/developer_ihxb2p.jpg' 
         alt="Mohammed Ismail" 
         className="w-32 h-32 mx-auto rounded-full mb-4 border-4 border-gray-300"
       />
       </a>
       
       <h4 className="text-2xl font-semibold">
-        This is me,  
-        <a href="https://ismaildevcode.netlify.app/" className="text-blue-600 ml-1">
+        <a href="https://ismaildevcode.netlify.app/" className="text-[orange] ml-1">
           Mohammed Ismail
         </a>
       </h4>
 
-      <p className="text-gray-600 font-semibold mt-2 text-sm">
-        I am the developer of this website, dedicated to providing free educational resources for all.
+      <p className="text-gray-600 font-semibold mt-2 text-sm tracking-wide leading-relaxed">
+        I am the developer of this website, dedicated to providing free educational resources.
       </p>
 
       <p className="indent-6 text-gray-600 mt-2 text-sm leading-relaxed text-justify">
@@ -69,7 +67,7 @@ const About = () => {
       </p>
 
       <p className="indent-6 text-gray-600 mt-2 text-sm leading-relaxed text-justify">
-        I'm also enhancing my skills in web and Android development.
+        I&apos;m also enhancing my skills in web and Android development.
       </p>
 
       <p className="indent-6 text-gray-600 mt-2 text-sm leading-relaxed text-justify">
@@ -89,6 +87,9 @@ const About = () => {
           </a>
           <a href='https://bd.linkedin.com/in/mohammed-ismail-601457217' target='_blank' aria-label='Contact me on linkedin'>
             <FaLinkedin size='25' className='text-[#0A66C2] h-[25px] w-[25px]' />
+          </a>
+          <a href='https://ismaildevcode.netlify.app/' target='_blank' aria-label='Contact me on linkedin'>
+            <FaGlobe size='25' className='text-[#333] h-[25px] w-[25px]' />
           </a>
         </div>
         </div>
