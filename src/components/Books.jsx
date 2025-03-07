@@ -100,9 +100,13 @@ const Books = ({ filterData, isLoading }) => {
                         <p className="text-[red] font-semibold">Under Development!</p>
                       </div>
                     )}
-                    <h2 className="text-base font-medium text-zinc-900 px-2 pt-2">
-                      {book.title.replace(/[_-]/g, " ").replace("Answers", "အဖြေစုံ")}
-                    </h2>
+        <h2 className="text-base font-medium text-zinc-900 px-2 pt-2">
+          {book.title
+            .replace(/[_-]/g, " ")
+            .replace(/\b(Answers)\b/, "အဖြေစုံ")
+            .replace(/\b(Islamic|General)\b/, "") // Removes entire words "Islamic" and "General"
+            .trim()} {/* Trim to remove extra spaces if any */}
+        </h2>
                     <p className="flex flex-row items-center justify-center text-green-500">
                       <MdDownloadForOffline size="18" /> {book.clicks}
                       <span className="px-2 text-gray-600 text-xs">
