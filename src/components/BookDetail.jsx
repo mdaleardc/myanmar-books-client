@@ -28,7 +28,7 @@ const BookDetail = () => {
   }
 
   return (
-    <div className="max-w-3xl mx-auto p-2 px-6 mt-6 bg-white shadow-lg rounded-lg">
+    <div className="max-w-3xl mx-auto px-6 py-4 mt-3 mb-6 bg-white shadow-lg rounded-lg">
       <div className="flex flex-col items-center">
         <img
           src={book.thumbnailUrl}
