@@ -33,7 +33,7 @@ const BookDetail = () => {
           alt="Book Thumbnail"
           className="rounded-lg shadow-md w-50 h-68 object-cover"
         />
-        <h2 className="mt-4 text-3xl font-bold text-gray-800">{book.subject.replace("Myanmar", "Myanmasar")}</h2>
+        <h2 className="mt-4 text-3xl font-bold text-gray-800">{book.subject.replace("Myanmar", "Myanmasar").replace(/_/g, " ")}</h2>
         <p className="text-lg text-gray-600">{book.grade.replace(/_/, ": ")}</p>
         <p className="text-gray-600">{book.pdfType.replace("Answers", "Answer Guide")}</p>
         {book.curriculum && <p className="text-gray-600">{book.curriculum} curriculum</p>}
