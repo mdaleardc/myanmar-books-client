@@ -1,4 +1,4 @@
-import { useParams } from "react-router"; // Use react-router for routing
+import { useParams, useNavigate } from "react-router"; // Added useNavigate for navigation
 import { useEffect, useState } from "react";
 import dayjs from "dayjs";
 import { MdDownloadForOffline } from "react-icons/md";
@@ -6,6 +6,7 @@ import axios from "axios";
 
 const BookDetail = () => {
   const { id } = useParams(); // Extract book ID from URL using useParams()
+  const navigate = useNavigate(); // Initialize useNavigate
   const [book, setBook] = useState(null);
 
   useEffect(() => {
@@ -13,6 +14,7 @@ const BookDetail = () => {
       try {
         const response = await axios(`${import.meta.env.VITE_APP_API_URL}/book-detail/${id}`);
         const data = await response.data.book;
+        console.log("book-detail: ", data.thumbnailUrl);
         setBook(data);
       } catch (error) {
         console.error("Failed to fetch book details:", error);
@@ -26,16 +28,16 @@ const BookDetail = () => {
   }
 
   return (
-    <div className="max-w-3xl mx-auto p-6 mt-4 bg-white shadow-lg rounded-lg">
+    <div className="max-w-3xl mx-auto p-2 px-6 mt-6 bg-white shadow-lg rounded-lg">
       <div className="flex flex-col items-center">
         <img
           src={book.thumbnailUrl}
           alt="Book Thumbnail"
-          className="rounded-lg shadow-md w-50 h-68 object-cover"
+          className="rounded-lg shadow-md w-[300px] h-[470px] object-cover"
         />
         <h2 className="mt-4 text-3xl font-bold text-gray-800">{book.subject.replace("Myanmar", "Myanmasar").replace(/_/g, " ")}</h2>
         <p className="text-lg text-gray-600">{book.grade.replace(/_/, ": ")}</p>
-        <p className="text-gray-600">{book.pdfType.replace("Answers", "Answer Guide")}</p>
+        <p className="text-gray-600">{book.pdfType.replace("Answers", "Answer Guide").replace(/_/g, " ")}</p>
         {book.curriculum && <p className="text-gray-600">{book.curriculum} curriculum</p>}
         <p className="text-gray-600">{book.categories.replace(/_/g, " ")}</p>
 
@@ -45,15 +47,26 @@ const BookDetail = () => {
           <span className="px-2 text-gray-500 text-sm">{dayjs(book.createdAt).fromNow()}</span>
         </p>
 
-        <a
-          role="button"
-          href={`${import.meta.env.VITE_APP_API_URL}/download/${book._id}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-5 px-6 py-2 rounded-full text-white text-lg font-medium bg-[#0066cc] hover:bg-[#004080] transition duration-300"
-        >
-          Download PDF
-        </a>
+        <div className="flex gap-4 mt-5">
+          {/* Home Button */}
+          <button
+            onClick={() => navigate("/")} // Navigate to home page without reload
+            className="px-5 py-2 rounded-full text-gray-700 border border-gray-400 hover:bg-gray-200 transition duration-300"
+          >
+            Go to Home
+          </button>
+
+          {/* Download Button */}
+          <a
+            role="button"
+            href={`${import.meta.env.VITE_APP_API_URL}/download/${book._id}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-2 rounded-full text-white text-lg font-medium bg-[#0066cc] hover:bg-[#004080] transition duration-300"
+          >
+            Download PDF
+          </a>
+        </div>
       </div>
     </div>
   );
