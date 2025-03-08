@@ -54,9 +54,18 @@ const About = () => {
         </a>
       </h4>
 
-      <p className="text-gray-600 font-semibold mt-2 text-sm tracking-wide leading-relaxed">
-        I am the developer of this website, dedicated to providing free educational resources.
-      </p>
+      <p className="text-sm font-semibold text-gray-600 mt-2 tracking-wide leading-relaxed">
+  I created the  
+  <a 
+    href="https://www.google.com/search?q=%22Myanmar+Books+Hub%22" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    className="text-blue-600 hover:text-blue-700"
+  >
+    <strong> Myanmar Books Hub </strong>
+  </a> 
+  website, offering free educational resources for everyone.
+</p>
 
       <p className="indent-6 text-gray-600 mt-2 text-sm leading-relaxed text-justify">
         A passionate web developer & educator, bridging the gap between technology and education.
