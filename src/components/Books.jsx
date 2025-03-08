@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router";
 import clsx from "clsx";
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
@@ -83,12 +84,14 @@ const Books = ({ filterData, isLoading }) => {
                     key={i}
                   >
                     {book.thumbnailUrl.trim() ? (
+                    <Link to={`/book-detail/${book._id}`}>
                       <img
                         src={book.thumbnailUrl}
                         alt="book's thumbnail"
                         className="rounded-lg mx-auto w-full h-[200px] object-cover"
                         loading="lazy"
                       />
+                      </Link>
                     ) : (
                       <div>
                         <img
