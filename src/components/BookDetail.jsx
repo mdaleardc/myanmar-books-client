@@ -34,10 +34,10 @@ const BookDetail = () => {
           className="rounded-lg shadow-md w-50 h-68 object-cover"
         />
         <h2 className="mt-4 text-3xl font-bold text-gray-800">{book.subject.replace("Myanmar", "Myanmasar")}</h2>
-        <p className="text-lg text-gray-600">{book.grade.replace("_", ": ")}</p>
+        <p className="text-lg text-gray-600">{book.grade.replace(/_/, ": ")}</p>
         <p className="text-gray-600">{book.pdfType.replace("Answers", "Answer Guide")}</p>
-        <p className="text-gray-600">{book.curriculum} curriculum</p>
-        <p className="text-gray-600">{book.categories.replace("_", " ")}</p>
+        {book.curriculum && <p className="text-gray-600">{book.curriculum} curriculum</p>}
+        <p className="text-gray-600">{book.categories.replace(/_/g, " ")}</p>
 
         <p className="flex items-center gap-2 text-green-500 mt-3">
           <MdDownloadForOffline size={20} />
