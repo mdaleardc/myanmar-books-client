@@ -1,7 +1,7 @@
 import { FaLinkedin, FaGithub, FaFacebook, FaGlobe } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import Contact from "./Contact";
-
+import developer from "../assets/developer.webp";
 const About = () => {
   return (
     <section className="bg-gray-50 mx-auto rounded py-10 w-full px-4 sm:px-6 lg:px-8">
@@ -40,16 +40,16 @@ const About = () => {
   <div className="max-w-4xl mx-auto text-center">
     <div className="bg-white shadow-lg rounded-lg p-6 border border-gray-200">
       {/* Profile Image */}
-      <a href='https://www.facebook.com/mdaismail.it'>
+      <a href='https://www.facebook.com/mdaismail.it' className="w-32 h-32 text-center">
       <img 
-        src='https://res.cloudinary.com/dubmzlovd/image/upload/v1741245462/developer_ihxb2p.jpg' 
+        src={developer}
         alt="Mohammed Ismail" 
         className="w-32 h-32 mx-auto rounded-full mb-4 border-4 border-gray-300"
       />
       </a>
       
       <h4 className="text-2xl font-semibold">
-        <a href="https://ismaildevcode.netlify.app/" className="text-pink-600 ml-1">
+        <a href="https://ismaildevcode.netlify.app/" className="text-pink-600 ml-1 hover:text-blue-600">
           Mohammed Ismail
         </a>
       </h4>
