@@ -57,7 +57,7 @@ const About = () => {
       <p className="text-sm font-semibold text-gray-600 mt-2 tracking-wide leading-relaxed">
   I created the  
   <a 
-    href="https://www.google.com/search?q=%22Myanmar+Books+Hub%22" 
+    href="https://www.google.com/search?q=Myanmar+Books+Hub" 
     target="_blank" 
     rel="noopener noreferrer" 
     className="text-blue-600 hover:text-blue-700"
