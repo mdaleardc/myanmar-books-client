@@ -5,8 +5,8 @@ const Share = () => {
 const handleShare = () => {
   if (navigator.share) {
     navigator.share({
-      title: "Download Free PDF Books",
-      text: "Check out this awesome website for free PDF books download!",
+      title: "Myanmar Books Hub",
+      text: "မည်သူမဆို စနစ်သစ် ကျောင်းသုံးစာအုပ်များ၊ အဖြေစုံများ ပထမတန်း မှ ဒွါဒသမတန်း အထိ၊ အစ္စလာမ်ဘာသာစာအုပ်များနှင့် အခြားစာအုပ်များကို လေ့လာရန် *Myanmar Books Hub* တွင်  အလွယ်တကူ ဒေါင်းလုဒ်လုပ်နိုင်ပါသည်။",
       url: window.location.href,
     })
       .then(() => console.log("Shared successfully!"))
@@ -38,7 +38,7 @@ return (
       <a
       aria-label='Share this website on Whatsapp'
         href={`https://wa.me/?text=${encodeURIComponent(
-          "Check out this awesome website for free PDF books download: " + window.location.href
+          "မည်သူမဆို စနစ်သစ် ကျောင်းသုံးစာအုပ်များ၊ အဖြေစုံများ ပထမတန်း မှ ဒွါဒသမတန်း အထိ၊ အစ္စလာမ်ဘာသာစာအုပ်များနှင့် အခြားစာအုပ်များကို လေ့လာရန် *Myanmar Books Hub* တွင်  အလွယ်တကူ ဒေါင်းလုဒ်လုပ်နိုင်ပါသည်။ : " + window.location.href
         )}`}
         target="_blank"
         rel="noopener noreferrer"
